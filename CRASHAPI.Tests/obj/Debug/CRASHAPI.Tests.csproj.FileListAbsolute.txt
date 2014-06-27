@@ -1,0 +1,1 @@
+C:\src\CRASHAPI\CRASHAPI.Tests\obj\Debug\CRASHAPI.Tests.csprojResolveAssemblyReference.cache

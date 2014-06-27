@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="d017848918174d6784eb1b7f3778652c" Name="Diagram1" ZoomLevel="96">
+        <EntityTypeShape EntityType="VCSGModel.vw_PQT_Persons" Width="1.5" PointX="6.25" PointY="0.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel.vw_PQT_Units" Width="1.5" PointX="4.625" PointY="0.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel.REFCITYCODE" Width="1.5" PointX="7.875" PointY="0.625" />
+        <EntityTypeShape EntityType="VCSGModel.REFCOUNTYCODE" Width="1.5" PointX="7.875" PointY="2.75" />
+        <EntityTypeShape EntityType="VCSGModel.vw_PQT_AccidentHeader" Width="2" PointX="2" PointY="0.5" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

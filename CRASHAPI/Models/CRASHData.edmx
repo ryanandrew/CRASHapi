@@ -1,0 +1,1021 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="VCSGModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="VCSGModelStoreContainer">
+          <EntitySet Name="REFCITYCODE" EntityType="VCSGModel.Store.REFCITYCODE" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFCOUNTYCODE" EntityType="VCSGModel.Store.REFCOUNTYCODE" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="vw_PQT_AccidentHeader" EntityType="VCSGModel.Store.vw_PQT_AccidentHeader" store:Type="Views" store:Schema="dbo" store:Name="vw_PQT_AccidentHeader">
+            <DefiningQuery>SELECT 
+      [vw_PQT_AccidentHeader].[REPORTINGAGENCYid] AS [REPORTINGAGENCYid], 
+      [vw_PQT_AccidentHeader].[ReportingAgency] AS [ReportingAgency], 
+      [vw_PQT_AccidentHeader].[REPORTNUMBER] AS [REPORTNUMBER], 
+      [vw_PQT_AccidentHeader].[LOCALID] AS [LOCALID], 
+      [vw_PQT_AccidentHeader].[ACCIDENTTIME] AS [ACCIDENTTIME], 
+      [vw_PQT_AccidentHeader].[ACCIDENTDATE] AS [ACCIDENTDATE], 
+      [vw_PQT_AccidentHeader].[STREETADDRESS] AS [STREETADDRESS], 
+      [vw_PQT_AccidentHeader].[TH_NUMBER] AS [TH_NUMBER], 
+      [vw_PQT_AccidentHeader].[VT_NUMBER] AS [VT_NUMBER], 
+      [vw_PQT_AccidentHeader].[US_NUMBER] AS [US_NUMBER], 
+      [vw_PQT_AccidentHeader].[I_NUMBER] AS [I_NUMBER], 
+      [vw_PQT_AccidentHeader].[INTERSECTIONWITH] AS [INTERSECTIONWITH], 
+      [vw_PQT_AccidentHeader].[DISTANCEFROMNEARESTSTR] AS [DISTANCEFROMNEARESTSTR], 
+      [vw_PQT_AccidentHeader].[DISTANCEFROMUNITS] AS [DISTANCEFROMUNITS], 
+      [vw_PQT_AccidentHeader].[POSTEDSPEED] AS [POSTEDSPEED], 
+      [vw_PQT_AccidentHeader].[DIRFROMNEARESTINTST] AS [DIRFROMNEARESTINTST], 
+      [vw_PQT_AccidentHeader].[DIROFCOLLISIONid] AS [DIROFCOLLISIONid], 
+      [vw_PQT_AccidentHeader].[DirOfCollision] AS [DirOfCollision], 
+      [vw_PQT_AccidentHeader].[MILEMARKER1] AS [MILEMARKER1], 
+      [vw_PQT_AccidentHeader].[MILEMARKER2] AS [MILEMARKER2], 
+      [vw_PQT_AccidentHeader].[MILEMARKER3] AS [MILEMARKER3], 
+      [vw_PQT_AccidentHeader].[AOTROADWAYGROUPid] AS [AOTROADWAYGROUPid], 
+      [vw_PQT_AccidentHeader].[RoadGroup] AS [RoadGroup], 
+      [vw_PQT_AccidentHeader].[AOTACTUALMILEPOINT] AS [AOTACTUALMILEPOINT], 
+      [vw_PQT_AccidentHeader].[CRASHTYPEid] AS [CRASHTYPEid], 
+      [vw_PQT_AccidentHeader].[CrashType] AS [CrashType], 
+      [vw_PQT_AccidentHeader].[TRAFFICSIGNALSid] AS [TRAFFICSIGNALSid], 
+      [vw_PQT_AccidentHeader].[TrafficSignals] AS [TrafficSignals], 
+      [vw_PQT_AccidentHeader].[WEATHERCONDITIONid] AS [WEATHERCONDITIONid], 
+      [vw_PQT_AccidentHeader].[WeatherCondition] AS [WeatherCondition], 
+      [vw_PQT_AccidentHeader].[LIGHTid] AS [LIGHTid], 
+      [vw_PQT_AccidentHeader].[Light] AS [Light], 
+      [vw_PQT_AccidentHeader].[ROADCHARACTERISTICSid] AS [ROADCHARACTERISTICSid], 
+      [vw_PQT_AccidentHeader].[RoadCharacteristics] AS [RoadCharacteristics], 
+      [vw_PQT_AccidentHeader].[ROADALIGNid] AS [ROADALIGNid], 
+      [vw_PQT_AccidentHeader].[RoadAlign] AS [RoadAlign], 
+      [vw_PQT_AccidentHeader].[ROADDESIGNid] AS [ROADDESIGNid], 
+      [vw_PQT_AccidentHeader].[RoadDesign] AS [RoadDesign], 
+      [vw_PQT_AccidentHeader].[ROADTYPEid] AS [ROADTYPEid], 
+      [vw_PQT_AccidentHeader].[RoadType] AS [RoadType], 
+      [vw_PQT_AccidentHeader].[SURFACECONDITIONid] AS [SURFACECONDITIONid], 
+      [vw_PQT_AccidentHeader].[SurfaceCondition] AS [SurfaceCondition], 
+      [vw_PQT_AccidentHeader].[ROADCONDITIONid] AS [ROADCONDITIONid], 
+      [vw_PQT_AccidentHeader].[RoadCondition] AS [RoadCondition], 
+      [vw_PQT_AccidentHeader].[OPERATORREPORTREQUIRED] AS [OPERATORREPORTREQUIRED], 
+      [vw_PQT_AccidentHeader].[POLICEPHOTOVIDEOTAKEN] AS [POLICEPHOTOVIDEOTAKEN], 
+      [vw_PQT_AccidentHeader].[AOTREPORTNUMBER] AS [AOTREPORTNUMBER], 
+      [vw_PQT_AccidentHeader].[EMSRUNNUMBER] AS [EMSRUNNUMBER], 
+      [vw_PQT_AccidentHeader].[EMSAgencyid] AS [EMSAgencyid], 
+      [vw_PQT_AccidentHeader].[EMSAgency] AS [EMSAgency], 
+      [vw_PQT_AccidentHeader].[DESTINATIONHOSPITALid] AS [DESTINATIONHOSPITALid], 
+      [vw_PQT_AccidentHeader].[DestinationHopital] AS [DestinationHopital], 
+      [vw_PQT_AccidentHeader].[EMSRUNNUMBER2] AS [EMSRUNNUMBER2], 
+      [vw_PQT_AccidentHeader].[EMSAGENCY2id] AS [EMSAGENCY2id], 
+      [vw_PQT_AccidentHeader].[EMSAgency2] AS [EMSAgency2], 
+      [vw_PQT_AccidentHeader].[DESTINATIONHOSPITAL2id] AS [DESTINATIONHOSPITAL2id], 
+      [vw_PQT_AccidentHeader].[DestinationHopital2] AS [DestinationHopital2], 
+      [vw_PQT_AccidentHeader].[DamageDescription] AS [DamageDescription], 
+      [vw_PQT_AccidentHeader].[IsLocationChanged] AS [IsLocationChanged], 
+      [vw_PQT_AccidentHeader].[NonReportable] AS [NonReportable], 
+      [vw_PQT_AccidentHeader].[NonReportableAddress] AS [NonReportableAddress], 
+      [vw_PQT_AccidentHeader].[VCSG_CITYTOWN] AS [VCSG_CITYTOWN], 
+      [vw_PQT_AccidentHeader].[GIS_CITYTOWN] AS [GIS_CITYTOWN], 
+      [vw_PQT_AccidentHeader].[VCSG_EASTING] AS [VCSG_EASTING], 
+      [vw_PQT_AccidentHeader].[GIS_EASTING] AS [GIS_EASTING], 
+      [vw_PQT_AccidentHeader].[VCSG_NORTHING] AS [VCSG_NORTHING], 
+      [vw_PQT_AccidentHeader].[GIS_NORTHING] AS [GIS_NORTHING], 
+      [vw_PQT_AccidentHeader].[VCSG_AOTROUTE] AS [VCSG_AOTROUTE], 
+      [vw_PQT_AccidentHeader].[GIS_AOTROUTE] AS [GIS_AOTROUTE], 
+      [vw_PQT_AccidentHeader].[VCSG_LRSNUMBER] AS [VCSG_LRSNUMBER], 
+      [vw_PQT_AccidentHeader].[GIS_LRSNUMBER] AS [GIS_LRSNUMBER], 
+      [vw_PQT_AccidentHeader].[VCSG_LATITUDE] AS [VCSG_LATITUDE], 
+      [vw_PQT_AccidentHeader].[GIS_LATITUDE] AS [GIS_LATITUDE], 
+      [vw_PQT_AccidentHeader].[VCSG_LONGITUDE] AS [VCSG_LONGITUDE], 
+      [vw_PQT_AccidentHeader].[GIS_LONGITUDE] AS [GIS_LONGITUDE], 
+      [vw_PQT_AccidentHeader].[HOWMAPPED] AS [HOWMAPPED]
+      FROM [dbo].[vw_PQT_AccidentHeader] AS [vw_PQT_AccidentHeader]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="vw_PQT_Persons" EntityType="VCSGModel.Store.vw_PQT_Persons" store:Type="Views" store:Schema="dbo" store:Name="vw_PQT_Persons">
+            <DefiningQuery>SELECT 
+      [vw_PQT_Persons].[REPORTINGAGENCY] AS [REPORTINGAGENCY], 
+      [vw_PQT_Persons].[REPORTNUMBER] AS [REPORTNUMBER], 
+      [vw_PQT_Persons].[UNITID] AS [UNITID], 
+      [vw_PQT_Persons].[PERSONID] AS [PERSONID], 
+      [vw_PQT_Persons].[PERSONTYPEid] AS [PERSONTYPEid], 
+      [vw_PQT_Persons].[PersonType] AS [PersonType], 
+      [vw_PQT_Persons].[OPRLICENSESTATECODE] AS [OPRLICENSESTATECODE], 
+      [vw_PQT_Persons].[OPRLICENSECLASSid] AS [OPRLICENSECLASSid], 
+      [vw_PQT_Persons].[OprLicenseClass] AS [OprLicenseClass], 
+      [vw_PQT_Persons].[STATECODE] AS [STATECODE], 
+      [vw_PQT_Persons].[SEX] AS [SEX], 
+      [vw_PQT_Persons].[AGE] AS [AGE], 
+      [vw_PQT_Persons].[SEATBELT] AS [SEATBELT], 
+      [vw_PQT_Persons].[CDL] AS [CDL], 
+      [vw_PQT_Persons].[SEATLOCATIONid] AS [SEATLOCATIONid], 
+      [vw_PQT_Persons].[SeatLocation] AS [SeatLocation], 
+      [vw_PQT_Persons].[INJURYid] AS [INJURYid], 
+      [vw_PQT_Persons].[Injury] AS [Injury], 
+      [vw_PQT_Persons].[EJECTEDid] AS [EJECTEDid], 
+      [vw_PQT_Persons].[Ejected] AS [Ejected], 
+      [vw_PQT_Persons].[RESTRAINTid] AS [RESTRAINTid], 
+      [vw_PQT_Persons].[Restraint] AS [Restraint], 
+      [vw_PQT_Persons].[PEDESTRIANCYCLEACTIONid] AS [PEDESTRIANCYCLEACTIONid], 
+      [vw_PQT_Persons].[PedCycleAction] AS [PedCycleAction], 
+      [vw_PQT_Persons].[PEDESTRIANCYCLELOCATIONid] AS [PEDESTRIANCYCLELOCATIONid], 
+      [vw_PQT_Persons].[PedCycleLocation] AS [PedCycleLocation], 
+      [vw_PQT_Persons].[INSURANCENAMEARS] AS [INSURANCENAMEARS], 
+      [vw_PQT_Persons].[EQUIPMENT1ARS] AS [EQUIPMENT1ARS], 
+      [vw_PQT_Persons].[AIRBAGDEPLOYED] AS [AIRBAGDEPLOYED], 
+      [vw_PQT_Persons].[EXTRACTED] AS [EXTRACTED], 
+      [vw_PQT_Persons].[PerceivedRace] AS [PerceivedRace]
+      FROM [dbo].[vw_PQT_Persons] AS [vw_PQT_Persons]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="vw_PQT_Units" EntityType="VCSGModel.Store.vw_PQT_Units" store:Type="Views" store:Schema="dbo" store:Name="vw_PQT_Units">
+            <DefiningQuery>SELECT 
+      [vw_PQT_Units].[REPORTINGAGENCY] AS [REPORTINGAGENCY], 
+      [vw_PQT_Units].[REPORTNUMBER] AS [REPORTNUMBER], 
+      [vw_PQT_Units].[UNITID] AS [UNITID], 
+      [vw_PQT_Units].[VEHNUMBER] AS [VEHNUMBER], 
+      [vw_PQT_Units].[UNITTYPEid] AS [UNITTYPEid], 
+      [vw_PQT_Units].[UnitType] AS [UnitType], 
+      [vw_PQT_Units].[VEHREGPLATETYPE] AS [VEHREGPLATETYPE], 
+      [vw_PQT_Units].[VEHREGSTATECODE] AS [VEHREGSTATECODE], 
+      [vw_PQT_Units].[VEHYEAR] AS [VEHYEAR], 
+      [vw_PQT_Units].[VEHMAKEid] AS [VEHMAKEid], 
+      [vw_PQT_Units].[VehMake] AS [VehMake], 
+      [vw_PQT_Units].[VEHMODEL] AS [VEHMODEL], 
+      [vw_PQT_Units].[ESTIMATEDSPEED] AS [ESTIMATEDSPEED], 
+      [vw_PQT_Units].[DAMAGEESTIMATE] AS [DAMAGEESTIMATE], 
+      [vw_PQT_Units].[DIRECTIONOFTRAVEL] AS [DIRECTIONOFTRAVEL], 
+      [vw_PQT_Units].[TOWEDBY] AS [TOWEDBY], 
+      [vw_PQT_Units].[VEHCOLLIDEDWITH] AS [VEHCOLLIDEDWITH], 
+      [vw_PQT_Units].[ALCOHOLTESTid] AS [ALCOHOLTESTid], 
+      [vw_PQT_Units].[AlcoholTest] AS [AlcoholTest], 
+      [vw_PQT_Units].[ALCOHOLTESTRESULT] AS [ALCOHOLTESTRESULT], 
+      [vw_PQT_Units].[DRUGTESTid] AS [DRUGTESTid], 
+      [vw_PQT_Units].[DrugTestResult] AS [DrugTestResult], 
+      [vw_PQT_Units].[DRUGTESTRESULT1id] AS [DRUGTESTRESULT1id], 
+      [vw_PQT_Units].[DrugTestResult1] AS [DrugTestResult1], 
+      [vw_PQT_Units].[DRUGTESTRESULT2id] AS [DRUGTESTRESULT2id], 
+      [vw_PQT_Units].[DrugTestResult2] AS [DrugTestResult2], 
+      [vw_PQT_Units].[DEFECTIVEEQUIPMENT1] AS [DEFECTIVEEQUIPMENT1], 
+      [vw_PQT_Units].[DEFECTIVEEQUIPMENT2] AS [DEFECTIVEEQUIPMENT2], 
+      [vw_PQT_Units].[DEFECTIVEEQUIPMENT3] AS [DEFECTIVEEQUIPMENT3], 
+      [vw_PQT_Units].[APPARENTOPERATORCOND1id] AS [APPARENTOPERATORCOND1id], 
+      [vw_PQT_Units].[ApparentOperatorCond1] AS [ApparentOperatorCond1], 
+      [vw_PQT_Units].[APPARENTOPERATORCOND2id] AS [APPARENTOPERATORCOND2id], 
+      [vw_PQT_Units].[ApparentOperatorCond2] AS [ApparentOperatorCond2], 
+      [vw_PQT_Units].[CONTRIBCIRCUMSTANCES1id] AS [CONTRIBCIRCUMSTANCES1id], 
+      [vw_PQT_Units].[ContribCircumstances1] AS [ContribCircumstances1], 
+      [vw_PQT_Units].[CONTRIBCIRCUMSTANCES2id] AS [CONTRIBCIRCUMSTANCES2id], 
+      [vw_PQT_Units].[ContribCircumstances2] AS [ContribCircumstances2], 
+      [vw_PQT_Units].[CITATIONTICKET1] AS [CITATIONTICKET1], 
+      [vw_PQT_Units].[CITATIONTICKET2] AS [CITATIONTICKET2], 
+      [vw_PQT_Units].[CITATIONTICKET3] AS [CITATIONTICKET3], 
+      [vw_PQT_Units].[VIOLATIONCODE1] AS [VIOLATIONCODE1], 
+      [vw_PQT_Units].[VIOLATIONCODE2] AS [VIOLATIONCODE2], 
+      [vw_PQT_Units].[VIOLATIONCODE3] AS [VIOLATIONCODE3], 
+      [vw_PQT_Units].[EMSRUNNUMBER] AS [EMSRUNNUMBER], 
+      [vw_PQT_Units].[EMSAGENCYid] AS [EMSAGENCYid], 
+      [vw_PQT_Units].[EMSAgency] AS [EMSAgency], 
+      [vw_PQT_Units].[DESTINATIONHOSPITALid] AS [DESTINATIONHOSPITALid], 
+      [vw_PQT_Units].[DestinationHospital] AS [DestinationHospital], 
+      [vw_PQT_Units].[TRAILERYEAR] AS [TRAILERYEAR], 
+      [vw_PQT_Units].[TRAILERMAKE] AS [TRAILERMAKE], 
+      [vw_PQT_Units].[TRAILERMODEL] AS [TRAILERMODEL], 
+      [vw_PQT_Units].[TRAILERPLATENUMBER] AS [TRAILERPLATENUMBER], 
+      [vw_PQT_Units].[TRAILERSTATE] AS [TRAILERSTATE], 
+      [vw_PQT_Units].[SCHOOLBUSRELATEDARS] AS [SCHOOLBUSRELATEDARS], 
+      [vw_PQT_Units].[UNOCCUPIED] AS [UNOCCUPIED], 
+      [vw_PQT_Units].[VehCollidedWith2] AS [VehCollidedWith2], 
+      [vw_PQT_Units].[TowedDueToDisablingDamage] AS [TowedDueToDisablingDamage], 
+      [vw_PQT_Units].[CommercialVehicle] AS [CommercialVehicle], 
+      [vw_PQT_Units].[ATV] AS [ATV], 
+      [vw_PQT_Units].[Snowmobile] AS [Snowmobile], 
+      [vw_PQT_Units].[DRUGTESTRESULT3id] AS [DRUGTESTRESULT3id], 
+      [vw_PQT_Units].[DrugTestResult3] AS [DrugTestResult3], 
+      [vw_PQT_Units].[DRUGTESTRESULT4id] AS [DRUGTESTRESULT4id], 
+      [vw_PQT_Units].[DrugTestResult4] AS [DrugTestResult4], 
+      [vw_PQT_Units].[SEQUENCEOFEVENT1id] AS [SEQUENCEOFEVENT1id], 
+      [vw_PQT_Units].[SequenceOfEvents1] AS [SequenceOfEvents1], 
+      [vw_PQT_Units].[SEQUENCEOFEVENT2id] AS [SEQUENCEOFEVENT2id], 
+      [vw_PQT_Units].[SequenceOfEvents2] AS [SequenceOfEvents2], 
+      [vw_PQT_Units].[SEQUENCEOFEVENT3id] AS [SEQUENCEOFEVENT3id], 
+      [vw_PQT_Units].[SequenceOfEvents3] AS [SequenceOfEvents3], 
+      [vw_PQT_Units].[SEQUENCEOFEVENT4id] AS [SEQUENCEOFEVENT4id], 
+      [vw_PQT_Units].[SequenceOfEvents4] AS [SequenceOfEvents4], 
+      [vw_PQT_Units].[INTERSTCARRIER] AS [INTERSTCARRIER], 
+      [vw_PQT_Units].[INTERSTCARRIERST] AS [INTERSTCARRIERST], 
+      [vw_PQT_Units].[SOURCE] AS [SOURCE], 
+      [vw_PQT_Units].[TOTALNUMOFAXLES] AS [TOTALNUMOFAXLES], 
+      [vw_PQT_Units].[GROSSVEHWTRATING] AS [GROSSVEHWTRATING], 
+      [vw_PQT_Units].[GROSSVEHWTRATINGUNITSid] AS [GROSSVEHWTRATINGUNITSid], 
+      [vw_PQT_Units].[GrossVehicleWeightUnit] AS [GrossVehicleWeightUnit], 
+      [vw_PQT_Units].[VEHICLELENGTH] AS [VEHICLELENGTH], 
+      [vw_PQT_Units].[VEHICLELENGTHUNITSid] AS [VEHICLELENGTHUNITSid], 
+      [vw_PQT_Units].[VehicleLengthUnit] AS [VehicleLengthUnit], 
+      [vw_PQT_Units].[TRAILORLENGTH] AS [TRAILORLENGTH], 
+      [vw_PQT_Units].[TRAILORLENGTHUNITSid] AS [TRAILORLENGTHUNITSid], 
+      [vw_PQT_Units].[TrailerLenghtUnit] AS [TrailerLenghtUnit], 
+      [vw_PQT_Units].[TRAILORLICENSESTATE] AS [TRAILORLICENSESTATE], 
+      [vw_PQT_Units].[HAZMATPLACARD] AS [HAZMATPLACARD], 
+      [vw_PQT_Units].[HAZMATSPILLED] AS [HAZMATSPILLED], 
+      [vw_PQT_Units].[HAZMATCLASSNUM] AS [HAZMATCLASSNUM], 
+      [vw_PQT_Units].[VEHCONFIGURATIONid] AS [VEHCONFIGURATIONid], 
+      [vw_PQT_Units].[VehicleConfiguration] AS [VehicleConfiguration], 
+      [vw_PQT_Units].[CARGOBODYTYPEid] AS [CARGOBODYTYPEid], 
+      [vw_PQT_Units].[CargoBodyType] AS [CargoBodyType], 
+      [vw_PQT_Units].[Source2] AS [Source2], 
+      [vw_PQT_Units].[Source3] AS [Source3], 
+      [vw_PQT_Units].[Source4] AS [Source4], 
+      [vw_PQT_Units].[GVWROrGCWRid] AS [GVWROrGCWRid], 
+      [vw_PQT_Units].[GVWRorGCWR] AS [GVWRorGCWR], 
+      [vw_PQT_Units].[IntraStCarrier] AS [IntraStCarrier], 
+      [vw_PQT_Units].[GovernmentCarrier] AS [GovernmentCarrier]
+      FROM [dbo].[vw_PQT_Units] AS [vw_PQT_Units]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+        <EntityType Name="REFCITYCODE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="varchar" Nullable="false" MaxLength="4" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="30" />
+          <Property Name="ZIPCODE" Type="varchar" MaxLength="30" />
+          <Property Name="COUNTYCODE" Type="varchar" MaxLength="2" />
+          <Property Name="SORTORDER" Type="numeric" Precision="5" />
+        </EntityType>
+        <EntityType Name="REFCOUNTYCODE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="varchar" Nullable="false" MaxLength="2" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="20" />
+          <Property Name="SORTORDER" Type="numeric" Precision="5" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'VCSG.dbo.vw_PQT_AccidentHeader' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="vw_PQT_AccidentHeader">
+          <Key>
+            <PropertyRef Name="REPORTINGAGENCYid" />
+            <PropertyRef Name="REPORTNUMBER" />
+            <PropertyRef Name="LOCALID" />
+            <PropertyRef Name="ACCIDENTDATE" />
+          </Key>
+          <Property Name="REPORTINGAGENCYid" Type="varchar" Nullable="false" MaxLength="9" />
+          <Property Name="ReportingAgency" Type="varchar" MaxLength="50" />
+          <Property Name="REPORTNUMBER" Type="varchar" Nullable="false" MaxLength="15" />
+          <Property Name="LOCALID" Type="numeric" Nullable="false" Precision="38" />
+          <Property Name="ACCIDENTTIME" Type="datetime" />
+          <Property Name="ACCIDENTDATE" Type="datetime" Nullable="false" />
+          <Property Name="STREETADDRESS" Type="varchar" MaxLength="40" />
+          <Property Name="TH_NUMBER" Type="varchar" MaxLength="3" />
+          <Property Name="VT_NUMBER" Type="varchar" MaxLength="4" />
+          <Property Name="US_NUMBER" Type="varchar" MaxLength="3" />
+          <Property Name="I_NUMBER" Type="varchar" MaxLength="3" />
+          <Property Name="INTERSECTIONWITH" Type="varchar" MaxLength="55" />
+          <Property Name="DISTANCEFROMNEARESTSTR" Type="varchar" MaxLength="5" />
+          <Property Name="DISTANCEFROMUNITS" Type="numeric" Precision="5" />
+          <Property Name="POSTEDSPEED" Type="numeric" Precision="5" />
+          <Property Name="DIRFROMNEARESTINTST" Type="varchar" MaxLength="1" />
+          <Property Name="DIROFCOLLISIONid" Type="numeric" Precision="5" />
+          <Property Name="DirOfCollision" Type="varchar" MaxLength="100" />
+          <Property Name="MILEMARKER1" Type="varchar" MaxLength="7" />
+          <Property Name="MILEMARKER2" Type="varchar" MaxLength="7" />
+          <Property Name="MILEMARKER3" Type="varchar" MaxLength="7" />
+          <Property Name="AOTROADWAYGROUPid" Type="numeric" Precision="5" />
+          <Property Name="RoadGroup" Type="varchar" MaxLength="100" />
+          <Property Name="AOTACTUALMILEPOINT" Type="float" />
+          <Property Name="CRASHTYPEid" Type="numeric" Precision="5" />
+          <Property Name="CrashType" Type="varchar" MaxLength="50" />
+          <Property Name="TRAFFICSIGNALSid" Type="numeric" Precision="5" />
+          <Property Name="TrafficSignals" Type="varchar" MaxLength="50" />
+          <Property Name="WEATHERCONDITIONid" Type="numeric" Precision="5" />
+          <Property Name="WeatherCondition" Type="varchar" MaxLength="40" />
+          <Property Name="LIGHTid" Type="numeric" Precision="5" />
+          <Property Name="Light" Type="varchar" MaxLength="35" />
+          <Property Name="ROADCHARACTERISTICSid" Type="numeric" Precision="5" />
+          <Property Name="RoadCharacteristics" Type="varchar" MaxLength="40" />
+          <Property Name="ROADALIGNid" Type="numeric" Precision="5" />
+          <Property Name="RoadAlign" Type="varchar" MaxLength="25" />
+          <Property Name="ROADDESIGNid" Type="numeric" Precision="5" />
+          <Property Name="RoadDesign" Type="varchar" MaxLength="25" />
+          <Property Name="ROADTYPEid" Type="numeric" Precision="5" />
+          <Property Name="RoadType" Type="varchar" MaxLength="25" />
+          <Property Name="SURFACECONDITIONid" Type="numeric" Precision="5" />
+          <Property Name="SurfaceCondition" Type="varchar" MaxLength="30" />
+          <Property Name="ROADCONDITIONid" Type="numeric" Precision="5" />
+          <Property Name="RoadCondition" Type="varchar" MaxLength="60" />
+          <Property Name="OPERATORREPORTREQUIRED" Type="numeric" Precision="1" />
+          <Property Name="POLICEPHOTOVIDEOTAKEN" Type="numeric" Precision="1" />
+          <Property Name="AOTREPORTNUMBER" Type="varchar" MaxLength="15" />
+          <Property Name="EMSRUNNUMBER" Type="varchar" MaxLength="8" />
+          <Property Name="EMSAgencyid" Type="varchar" MaxLength="3" />
+          <Property Name="EMSAgency" Type="varchar" MaxLength="50" />
+          <Property Name="DESTINATIONHOSPITALid" Type="varchar" MaxLength="3" />
+          <Property Name="DestinationHopital" Type="varchar" MaxLength="50" />
+          <Property Name="EMSRUNNUMBER2" Type="varchar" MaxLength="8" />
+          <Property Name="EMSAGENCY2id" Type="varchar" MaxLength="3" />
+          <Property Name="EMSAgency2" Type="varchar" MaxLength="50" />
+          <Property Name="DESTINATIONHOSPITAL2id" Type="varchar" MaxLength="3" />
+          <Property Name="DestinationHopital2" Type="varchar" MaxLength="50" />
+          <Property Name="DamageDescription" Type="nvarchar(max)" />
+          <Property Name="IsLocationChanged" Type="bit" />
+          <Property Name="NonReportable" Type="bit" />
+          <Property Name="NonReportableAddress" Type="varchar" MaxLength="1000" />
+          <Property Name="VCSG_CITYTOWN" Type="varchar" MaxLength="4" />
+          <Property Name="GIS_CITYTOWN" Type="nvarchar" MaxLength="254" />
+          <Property Name="VCSG_EASTING" Type="varchar" MaxLength="11" />
+          <Property Name="GIS_EASTING" Type="nvarchar" MaxLength="254" />
+          <Property Name="VCSG_NORTHING" Type="varchar" MaxLength="11" />
+          <Property Name="GIS_NORTHING" Type="nvarchar" MaxLength="254" />
+          <Property Name="VCSG_AOTROUTE" Type="varchar" MaxLength="5" />
+          <Property Name="GIS_AOTROUTE" Type="nvarchar" MaxLength="254" />
+          <Property Name="VCSG_LRSNUMBER" Type="varchar" MaxLength="15" />
+          <Property Name="GIS_LRSNUMBER" Type="nvarchar" MaxLength="254" />
+          <Property Name="VCSG_LATITUDE" Type="varchar" MaxLength="20" />
+          <Property Name="GIS_LATITUDE" Type="nvarchar" MaxLength="20" />
+          <Property Name="VCSG_LONGITUDE" Type="varchar" MaxLength="20" />
+          <Property Name="GIS_LONGITUDE" Type="nvarchar" MaxLength="20" />
+          <Property Name="HOWMAPPED" Type="nvarchar" MaxLength="254" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'VCSG.dbo.vw_PQT_Persons' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="vw_PQT_Persons">
+          <Key>
+            <PropertyRef Name="REPORTINGAGENCY" />
+            <PropertyRef Name="REPORTNUMBER" />
+            <PropertyRef Name="UNITID" />
+            <PropertyRef Name="PERSONID" />
+          </Key>
+          <Property Name="REPORTINGAGENCY" Type="varchar" Nullable="false" MaxLength="9" />
+          <Property Name="REPORTNUMBER" Type="varchar" Nullable="false" MaxLength="15" />
+          <Property Name="UNITID" Type="numeric" Nullable="false" Precision="5" />
+          <Property Name="PERSONID" Type="numeric" Nullable="false" Precision="5" />
+          <Property Name="PERSONTYPEid" Type="numeric" Precision="5" />
+          <Property Name="PersonType" Type="varchar" MaxLength="50" />
+          <Property Name="OPRLICENSESTATECODE" Type="varchar" MaxLength="3" />
+          <Property Name="OPRLICENSECLASSid" Type="varchar" MaxLength="2" />
+          <Property Name="OprLicenseClass" Type="varchar" MaxLength="50" />
+          <Property Name="STATECODE" Type="varchar" MaxLength="3" />
+          <Property Name="SEX" Type="varchar" MaxLength="1" />
+          <Property Name="AGE" Type="varchar" MaxLength="5" />
+          <Property Name="SEATBELT" Type="numeric" Precision="1" />
+          <Property Name="CDL" Type="numeric" Precision="1" />
+          <Property Name="SEATLOCATIONid" Type="numeric" Precision="5" />
+          <Property Name="SeatLocation" Type="varchar" MaxLength="60" />
+          <Property Name="INJURYid" Type="numeric" Precision="5" />
+          <Property Name="Injury" Type="varchar" MaxLength="40" />
+          <Property Name="EJECTEDid" Type="numeric" Precision="5" />
+          <Property Name="Ejected" Type="varchar" MaxLength="35" />
+          <Property Name="RESTRAINTid" Type="numeric" Precision="5" />
+          <Property Name="Restraint" Type="varchar" MaxLength="50" />
+          <Property Name="PEDESTRIANCYCLEACTIONid" Type="numeric" Precision="5" />
+          <Property Name="PedCycleAction" Type="varchar" MaxLength="60" />
+          <Property Name="PEDESTRIANCYCLELOCATIONid" Type="numeric" Precision="5" />
+          <Property Name="PedCycleLocation" Type="varchar" MaxLength="80" />
+          <Property Name="INSURANCENAMEARS" Type="varchar" MaxLength="35" />
+          <Property Name="EQUIPMENT1ARS" Type="varchar" MaxLength="1" />
+          <Property Name="AIRBAGDEPLOYED" Type="numeric" Precision="1" />
+          <Property Name="EXTRACTED" Type="numeric" Precision="1" />
+          <Property Name="PerceivedRace" Type="smallint" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'VCSG.dbo.vw_PQT_Units' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="vw_PQT_Units">
+          <Key>
+            <PropertyRef Name="REPORTINGAGENCY" />
+            <PropertyRef Name="REPORTNUMBER" />
+            <PropertyRef Name="UNITID" />
+          </Key>
+          <Property Name="REPORTINGAGENCY" Type="varchar" Nullable="false" MaxLength="9" />
+          <Property Name="REPORTNUMBER" Type="varchar" Nullable="false" MaxLength="15" />
+          <Property Name="UNITID" Type="numeric" Nullable="false" Precision="5" />
+          <Property Name="VEHNUMBER" Type="varchar" MaxLength="2" />
+          <Property Name="UNITTYPEid" Type="numeric" Precision="5" />
+          <Property Name="UnitType" Type="varchar" MaxLength="55" />
+          <Property Name="VEHREGPLATETYPE" Type="varchar" MaxLength="6" />
+          <Property Name="VEHREGSTATECODE" Type="varchar" MaxLength="3" />
+          <Property Name="VEHYEAR" Type="varchar" MaxLength="4" />
+          <Property Name="VEHMAKEid" Type="numeric" Precision="5" />
+          <Property Name="VehMake" Type="varchar" MaxLength="50" />
+          <Property Name="VEHMODEL" Type="varchar" MaxLength="25" />
+          <Property Name="ESTIMATEDSPEED" Type="varchar" MaxLength="3" />
+          <Property Name="DAMAGEESTIMATE" Type="numeric" Precision="5" />
+          <Property Name="DIRECTIONOFTRAVEL" Type="varchar" MaxLength="1" />
+          <Property Name="TOWEDBY" Type="varchar" MaxLength="25" />
+          <Property Name="VEHCOLLIDEDWITH" Type="numeric" Precision="5" />
+          <Property Name="ALCOHOLTESTid" Type="numeric" Precision="5" />
+          <Property Name="AlcoholTest" Type="varchar" MaxLength="35" />
+          <Property Name="ALCOHOLTESTRESULT" Type="varchar" MaxLength="5" />
+          <Property Name="DRUGTESTid" Type="numeric" Precision="5" />
+          <Property Name="DrugTestResult" Type="varchar" MaxLength="35" />
+          <Property Name="DRUGTESTRESULT1id" Type="numeric" Precision="5" />
+          <Property Name="DrugTestResult1" Type="varchar" MaxLength="35" />
+          <Property Name="DRUGTESTRESULT2id" Type="numeric" Precision="5" />
+          <Property Name="DrugTestResult2" Type="varchar" MaxLength="35" />
+          <Property Name="DEFECTIVEEQUIPMENT1" Type="numeric" Precision="5" />
+          <Property Name="DEFECTIVEEQUIPMENT2" Type="numeric" Precision="5" />
+          <Property Name="DEFECTIVEEQUIPMENT3" Type="numeric" Precision="5" />
+          <Property Name="APPARENTOPERATORCOND1id" Type="numeric" Precision="5" />
+          <Property Name="ApparentOperatorCond1" Type="varchar" MaxLength="50" />
+          <Property Name="APPARENTOPERATORCOND2id" Type="numeric" Precision="5" />
+          <Property Name="ApparentOperatorCond2" Type="varchar" MaxLength="50" />
+          <Property Name="CONTRIBCIRCUMSTANCES1id" Type="numeric" Precision="5" />
+          <Property Name="ContribCircumstances1" Type="varchar" MaxLength="100" />
+          <Property Name="CONTRIBCIRCUMSTANCES2id" Type="numeric" Precision="5" />
+          <Property Name="ContribCircumstances2" Type="varchar" MaxLength="100" />
+          <Property Name="CITATIONTICKET1" Type="varchar" MaxLength="8" />
+          <Property Name="CITATIONTICKET2" Type="varchar" MaxLength="8" />
+          <Property Name="CITATIONTICKET3" Type="varchar" MaxLength="8" />
+          <Property Name="VIOLATIONCODE1" Type="varchar" MaxLength="5" />
+          <Property Name="VIOLATIONCODE2" Type="varchar" MaxLength="5" />
+          <Property Name="VIOLATIONCODE3" Type="varchar" MaxLength="5" />
+          <Property Name="EMSRUNNUMBER" Type="varchar" MaxLength="8" />
+          <Property Name="EMSAGENCYid" Type="varchar" MaxLength="3" />
+          <Property Name="EMSAgency" Type="varchar" MaxLength="50" />
+          <Property Name="DESTINATIONHOSPITALid" Type="varchar" MaxLength="3" />
+          <Property Name="DestinationHospital" Type="varchar" MaxLength="50" />
+          <Property Name="TRAILERYEAR" Type="varchar" MaxLength="4" />
+          <Property Name="TRAILERMAKE" Type="varchar" MaxLength="25" />
+          <Property Name="TRAILERMODEL" Type="varchar" MaxLength="25" />
+          <Property Name="TRAILERPLATENUMBER" Type="varchar" MaxLength="10" />
+          <Property Name="TRAILERSTATE" Type="varchar" MaxLength="3" />
+          <Property Name="SCHOOLBUSRELATEDARS" Type="varchar" MaxLength="1" />
+          <Property Name="UNOCCUPIED" Type="numeric" Precision="1" />
+          <Property Name="VehCollidedWith2" Type="numeric" Precision="5" />
+          <Property Name="TowedDueToDisablingDamage" Type="bit" />
+          <Property Name="CommercialVehicle" Type="bit" />
+          <Property Name="ATV" Type="bit" />
+          <Property Name="Snowmobile" Type="bit" />
+          <Property Name="DRUGTESTRESULT3id" Type="numeric" Precision="5" />
+          <Property Name="DrugTestResult3" Type="varchar" MaxLength="35" />
+          <Property Name="DRUGTESTRESULT4id" Type="numeric" Precision="5" />
+          <Property Name="DrugTestResult4" Type="varchar" MaxLength="35" />
+          <Property Name="SEQUENCEOFEVENT1id" Type="numeric" Precision="5" />
+          <Property Name="SequenceOfEvents1" Type="varchar" MaxLength="53" />
+          <Property Name="SEQUENCEOFEVENT2id" Type="numeric" Precision="5" />
+          <Property Name="SequenceOfEvents2" Type="varchar" MaxLength="53" />
+          <Property Name="SEQUENCEOFEVENT3id" Type="numeric" Precision="5" />
+          <Property Name="SequenceOfEvents3" Type="varchar" MaxLength="53" />
+          <Property Name="SEQUENCEOFEVENT4id" Type="numeric" Precision="5" />
+          <Property Name="SequenceOfEvents4" Type="varchar" MaxLength="53" />
+          <Property Name="INTERSTCARRIER" Type="numeric" Precision="1" />
+          <Property Name="INTERSTCARRIERST" Type="varchar" MaxLength="3" />
+          <Property Name="SOURCE" Type="numeric" Precision="5" />
+          <Property Name="TOTALNUMOFAXLES" Type="numeric" Precision="5" />
+          <Property Name="GROSSVEHWTRATING" Type="varchar" MaxLength="10" />
+          <Property Name="GROSSVEHWTRATINGUNITSid" Type="numeric" Precision="5" />
+          <Property Name="GrossVehicleWeightUnit" Type="varchar" MaxLength="25" />
+          <Property Name="VEHICLELENGTH" Type="varchar" MaxLength="3" />
+          <Property Name="VEHICLELENGTHUNITSid" Type="numeric" Precision="5" />
+          <Property Name="VehicleLengthUnit" Type="varchar" MaxLength="25" />
+          <Property Name="TRAILORLENGTH" Type="varchar" MaxLength="3" />
+          <Property Name="TRAILORLENGTHUNITSid" Type="numeric" Precision="5" />
+          <Property Name="TrailerLenghtUnit" Type="varchar" MaxLength="25" />
+          <Property Name="TRAILORLICENSESTATE" Type="varchar" MaxLength="3" />
+          <Property Name="HAZMATPLACARD" Type="numeric" Precision="1" />
+          <Property Name="HAZMATSPILLED" Type="numeric" Precision="1" />
+          <Property Name="HAZMATCLASSNUM" Type="varchar" MaxLength="4" />
+          <Property Name="VEHCONFIGURATIONid" Type="numeric" Precision="5" />
+          <Property Name="VehicleConfiguration" Type="varchar" MaxLength="50" />
+          <Property Name="CARGOBODYTYPEid" Type="numeric" Precision="5" />
+          <Property Name="CargoBodyType" Type="varchar" MaxLength="50" />
+          <Property Name="Source2" Type="numeric" Precision="5" />
+          <Property Name="Source3" Type="numeric" Precision="5" />
+          <Property Name="Source4" Type="numeric" Precision="5" />
+          <Property Name="GVWROrGCWRid" Type="smallint" />
+          <Property Name="GVWRorGCWR" Type="varchar" MaxLength="50" />
+          <Property Name="IntraStCarrier" Type="bit" />
+          <Property Name="GovernmentCarrier" Type="bit" />
+        </EntityType>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="VCSGModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="VCSGEntities" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="vw_PQT_Persons" EntityType="VCSGModel.vw_PQT_Persons" />
+          <EntitySet Name="vw_PQT_Units" EntityType="VCSGModel.vw_PQT_Units" />
+          <EntitySet Name="REFCITYCODEs" EntityType="VCSGModel.REFCITYCODE" />
+          <EntitySet Name="REFCOUNTYCODEs" EntityType="VCSGModel.REFCOUNTYCODE" />
+          <EntitySet Name="vw_PQT_AccidentHeader" EntityType="VCSGModel.vw_PQT_AccidentHeader" />
+          </EntityContainer>
+        <EntityType Name="vw_PQT_Persons">
+          <Key>
+            <PropertyRef Name="REPORTINGAGENCY" />
+            <PropertyRef Name="REPORTNUMBER" />
+            <PropertyRef Name="UNITID" />
+            <PropertyRef Name="PERSONID" />
+          </Key>
+          <Property Name="REPORTINGAGENCY" Type="String" Nullable="false" MaxLength="9" Unicode="false" FixedLength="false" />
+          <Property Name="REPORTNUMBER" Type="String" Nullable="false" MaxLength="15" Unicode="false" FixedLength="false" />
+          <Property Name="UNITID" Type="Decimal" Nullable="false" Precision="5" Scale="0" />
+          <Property Name="PERSONID" Type="Decimal" Nullable="false" Precision="5" Scale="0" />
+          <Property Name="PERSONTYPEid" Type="Decimal" Precision="5" Scale="0" />
+          <Property Name="PersonType" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="OPRLICENSESTATECODE" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+          <Property Name="OPRLICENSECLASSid" Type="String" MaxLength="2" Unicode="false" FixedLength="false" />
+          <Property Name="OprLicenseClass" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="STATECODE" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+          <Property Name="SEX" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+          <Property Name="AGE" Type="String" MaxLength="5" Unicode="false" FixedLength="false" />
+          <Property Name="SEATBELT" Type="Decimal" Precision="1" Scale="0" />
+          <Property Name="CDL" Type="Decimal" Precision="1" Scale="0" />
+          <Property Name="SEATLOCATIONid" Type="Decimal" Precision="5" Scale="0" />
+          <Property Name="SeatLocation" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="INJURYid" Type="Decimal" Precision="5" Scale="0" />
+          <Property Name="Injury" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+          <Property Name="EJECTEDid" Type="Decimal" Precision="5" Scale="0" />
+          <Property Name="Ejected" Type="String" MaxLength="35" Unicode="false" FixedLength="false" />
+          <Property Name="RESTRAINTid" Type="Decimal" Precision="5" Scale="0" />
+          <Property Name="Restraint" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="PEDESTRIANCYCLEACTIONid" Type="Decimal" Precision="5" Scale="0" />
+          <Property Name="PedCycleAction" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="PEDESTRIANCYCLELOCATIONid" Type="Decimal" Precision="5" Scale="0" />
+          <Property Name="PedCycleLocation" Type="String" MaxLength="80" Unicode="false" FixedLength="false" />
+          <Property Name="INSURANCENAMEARS" Type="String" MaxLength="35" Unicode="false" FixedLength="false" />
+          <Property Name="EQUIPMENT1ARS" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+          <Property Name="AIRBAGDEPLOYED" Type="Decimal" Precision="1" Scale="0" />
+          <Property Name="EXTRACTED" Type="Decimal" Precision="1" Scale="0" />
+          <Property Name="PerceivedRace" Type="Int16" />
+        </EntityType>
+        <EntityType Name="vw_PQT_Units">
+          <Key>
+            <PropertyRef Name="REPORTINGAGENCY" />
+            <PropertyRef Name="REPORTNUMBER" />
+            <PropertyRef Name="UNITID" />
+          </Key>
+          <Property Name="REPORTINGAGENCY" Type="String" Nullable="false" MaxLength="9" Unicode="false" FixedLength="false" />
+          <Property Name="REPORTNUMBER" Type="String" Nullable="false" MaxLength="15" Unicode="false" FixedLength="false" />
+          <Property Name="UNITID" Type="Decimal" Nullable="false" Precision="5" Scale="0" />
+          <Property Name="VEHNUMBER" Type="String" MaxLength="2" Unicode="false" FixedLength="false" />
+          <Property Name="UNITTYPEid" Type="Decimal" Precision="5" Scale="0" />
+          <Property Name="UnitType" Type="String" MaxLength="55" Unicode="false" FixedLength="false" />
+          <Property Name="VEHREGPLATETYPE" Type="String" MaxLength="6" Unicode="false" FixedLength="false" />
+          <Property Name="VEHREGSTATECODE" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+          <Property Name="VEHYEAR" Type="String" MaxLength="4" Unicode="false" FixedLength="false" />
+          <Property Name="VEHMAKEid" Type="Decimal" Precision="5" Scale="0" />
+          <Property Name="VehMake" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="VEHMODEL" Type="String" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="ESTIMATEDSPEED" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+          <Property Name="DAMAGEESTIMATE" Type="Decimal" Precision="5" Scale="0" />
+          <Property Name="DIRECTIONOFTRAVEL" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+          <Property Name="TOWEDBY" Type="String" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="VEHCOLLIDEDWITH" Type="Decimal" Precision="5" Scale="0" />
+          <Property Name="ALCOHOLTESTid" Type="Decimal" Precision="5" Scale="0" />
+          <Property Name="AlcoholTest" Type="String" MaxLength="35" Unicode="false" FixedLength="false" />
+          <Property Name="ALCOHOLTESTRESULT" Type="String" MaxLength="5" Unicode="false" FixedLength="false" />
+          <Property Name="DRUGTESTid" Type="Decimal" Precision="5" Scale="0" />
+          <Property Name="DrugTestResult" Type="String" MaxLength="35" Unicode="false" FixedLength="false" />
+          <Property Name="DRUGTESTRESULT1id" Type="Decimal" Precision="5" Scale="0" />
+          <Property Name="DrugTestResult1" Type="String" MaxLength="35" Unicode="false" FixedLength="false" />
+          <Property Name="DRUGTESTRESULT2id" Type="Decimal" Precision="5" Scale="0" />
+          <Property Name="DrugTestResult2" Type="String" MaxLength="35" Unicode="false" FixedLength="false" />
+          <Property Name="DEFECTIVEEQUIPMENT1" Type="Decimal" Precision="5" Scale="0" />
+          <Property Name="DEFECTIVEEQUIPMENT2" Type="Decimal" Precision="5" Scale="0" />
+          <Property Name="DEFECTIVEEQUIPMENT3" Type="Decimal" Precision="5" Scale="0" />
+          <Property Name="APPARENTOPERATORCOND1id" Type="Decimal" Precision="5" Scale="0" />
+          <Property Name="ApparentOperatorCond1" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="APPARENTOPERATORCOND2id" Type="Decimal" Precision="5" Scale="0" />
+          <Property Name="ApparentOperatorCond2" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="CONTRIBCIRCUMSTANCES1id" Type="Decimal" Precision="5" Scale="0" />
+          <Property Name="ContribCircumstances1" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="CONTRIBCIRCUMSTANCES2id" Type="Decimal" Precision="5" Scale="0" />
+          <Property Name="ContribCircumstances2" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="CITATIONTICKET1" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+          <Property Name="CITATIONTICKET2" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+          <Property Name="CITATIONTICKET3" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+          <Property Name="VIOLATIONCODE1" Type="String" MaxLength="5" Unicode="false" FixedLength="false" />
+          <Property Name="VIOLATIONCODE2" Type="String" MaxLength="5" Unicode="false" FixedLength="false" />
+          <Property Name="VIOLATIONCODE3" Type="String" MaxLength="5" Unicode="false" FixedLength="false" />
+          <Property Name="EMSRUNNUMBER" Type="String" MaxLength="8" Unicode="false" FixedLength="false" />
+          <Property Name="EMSAGENCYid" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+          <Property Name="EMSAgency" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="DESTINATIONHOSPITALid" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+          <Property Name="DestinationHospital" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="TRAILERYEAR" Type="String" MaxLength="4" Unicode="false" FixedLength="false" />
+          <Property Name="TRAILERMAKE" Type="String" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="TRAILERMODEL" Type="String" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="TRAILERPLATENUMBER" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="TRAILERSTATE" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+          <Property Name="SCHOOLBUSRELATEDARS" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+          <Property Name="UNOCCUPIED" Type="Decimal" Precision="1" Scale="0" />
+          <Property Name="VehCollidedWith2" Type="Decimal" Precision="5" Scale="0" />
+          <Property Name="TowedDueToDisablingDamage" Type="Boolean" />
+          <Property Name="CommercialVehicle" Type="Boolean" />
+          <Property Name="ATV" Type="Boolean" />
+          <Property Name="Snowmobile" Type="Boolean" />
+          <Property Name="DRUGTESTRESULT3id" Type="Decimal" Precision="5" Scale="0" />
+          <Property Name="DrugTestResult3" Type="String" MaxLength="35" Unicode="false" FixedLength="false" />
+          <Property Name="DRUGTESTRESULT4id" Type="Decimal" Precision="5" Scale="0" />
+          <Property Name="DrugTestResult4" Type="String" MaxLength="35" Unicode="false" FixedLength="false" />
+          <Property Name="SEQUENCEOFEVENT1id" Type="Decimal" Precision="5" Scale="0" />
+          <Property Name="SequenceOfEvents1" Type="String" MaxLength="53" Unicode="false" FixedLength="false" />
+          <Property Name="SEQUENCEOFEVENT2id" Type="Decimal" Precision="5" Scale="0" />
+          <Property Name="SequenceOfEvents2" Type="String" MaxLength="53" Unicode="false" FixedLength="false" />
+          <Property Name="SEQUENCEOFEVENT3id" Type="Decimal" Precision="5" Scale="0" />
+          <Property Name="SequenceOfEvents3" Type="String" MaxLength="53" Unicode="false" FixedLength="false" />
+          <Property Name="SEQUENCEOFEVENT4id" Type="Decimal" Precision="5" Scale="0" />
+          <Property Name="SequenceOfEvents4" Type="String" MaxLength="53" Unicode="false" FixedLength="false" />
+          <Property Name="INTERSTCARRIER" Type="Decimal" Precision="1" Scale="0" />
+          <Property Name="INTERSTCARRIERST" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+          <Property Name="SOURCE" Type="Decimal" Precision="5" Scale="0" />
+          <Property Name="TOTALNUMOFAXLES" Type="Decimal" Precision="5" Scale="0" />
+          <Property Name="GROSSVEHWTRATING" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="GROSSVEHWTRATINGUNITSid" Type="Decimal" Precision="5" Scale="0" />
+          <Property Name="GrossVehicleWeightUnit" Type="String" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="VEHICLELENGTH" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+          <Property Name="VEHICLELENGTHUNITSid" Type="Decimal" Precision="5" Scale="0" />
+          <Property Name="VehicleLengthUnit" Type="String" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="TRAILORLENGTH" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+          <Property Name="TRAILORLENGTHUNITSid" Type="Decimal" Precision="5" Scale="0" />
+          <Property Name="TrailerLenghtUnit" Type="String" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="TRAILORLICENSESTATE" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+          <Property Name="HAZMATPLACARD" Type="Decimal" Precision="1" Scale="0" />
+          <Property Name="HAZMATSPILLED" Type="Decimal" Precision="1" Scale="0" />
+          <Property Name="HAZMATCLASSNUM" Type="String" MaxLength="4" Unicode="false" FixedLength="false" />
+          <Property Name="VEHCONFIGURATIONid" Type="Decimal" Precision="5" Scale="0" />
+          <Property Name="VehicleConfiguration" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="CARGOBODYTYPEid" Type="Decimal" Precision="5" Scale="0" />
+          <Property Name="CargoBodyType" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Source2" Type="Decimal" Precision="5" Scale="0" />
+          <Property Name="Source3" Type="Decimal" Precision="5" Scale="0" />
+          <Property Name="Source4" Type="Decimal" Precision="5" Scale="0" />
+          <Property Name="GVWROrGCWRid" Type="Int16" />
+          <Property Name="GVWRorGCWR" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="IntraStCarrier" Type="Boolean" />
+          <Property Name="GovernmentCarrier" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="REFCITYCODE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="String" Name="ID" Nullable="false" MaxLength="4" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="DESCRIPTION" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="ZIPCODE" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="COUNTYCODE" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Type="Decimal" Name="SORTORDER" Precision="5" Scale="0" />
+        </EntityType>
+        <EntityType Name="REFCOUNTYCODE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="String" Name="ID" Nullable="false" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="DESCRIPTION" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Type="Decimal" Name="SORTORDER" Precision="5" Scale="0" />
+        </EntityType>
+        <EntityType Name="vw_PQT_AccidentHeader">
+          <Key>
+            <PropertyRef Name="REPORTINGAGENCYid" />
+            <PropertyRef Name="REPORTNUMBER" />
+            <PropertyRef Name="LOCALID" />
+            <PropertyRef Name="ACCIDENTDATE" />
+          </Key>
+          <Property Type="String" Name="REPORTINGAGENCYid" Nullable="false" MaxLength="9" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="ReportingAgency" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="REPORTNUMBER" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Type="Decimal" Name="LOCALID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="ACCIDENTTIME" Precision="3" />
+          <Property Type="DateTime" Name="ACCIDENTDATE" Nullable="false" Precision="3" />
+          <Property Type="String" Name="STREETADDRESS" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="TH_NUMBER" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="VT_NUMBER" MaxLength="4" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="US_NUMBER" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="I_NUMBER" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="INTERSECTIONWITH" MaxLength="55" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="DISTANCEFROMNEARESTSTR" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Type="Decimal" Name="DISTANCEFROMUNITS" Precision="5" Scale="0" />
+          <Property Type="Decimal" Name="POSTEDSPEED" Precision="5" Scale="0" />
+          <Property Type="String" Name="DIRFROMNEARESTINTST" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Type="Decimal" Name="DIROFCOLLISIONid" Precision="5" Scale="0" />
+          <Property Type="String" Name="DirOfCollision" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="MILEMARKER1" MaxLength="7" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="MILEMARKER2" MaxLength="7" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="MILEMARKER3" MaxLength="7" FixedLength="false" Unicode="false" />
+          <Property Type="Decimal" Name="AOTROADWAYGROUPid" Precision="5" Scale="0" />
+          <Property Type="String" Name="RoadGroup" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="Double" Name="AOTACTUALMILEPOINT" />
+          <Property Type="Decimal" Name="CRASHTYPEid" Precision="5" Scale="0" />
+          <Property Type="String" Name="CrashType" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Decimal" Name="TRAFFICSIGNALSid" Precision="5" Scale="0" />
+          <Property Type="String" Name="TrafficSignals" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Decimal" Name="WEATHERCONDITIONid" Precision="5" Scale="0" />
+          <Property Type="String" Name="WeatherCondition" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Type="Decimal" Name="LIGHTid" Precision="5" Scale="0" />
+          <Property Type="String" Name="Light" MaxLength="35" FixedLength="false" Unicode="false" />
+          <Property Type="Decimal" Name="ROADCHARACTERISTICSid" Precision="5" Scale="0" />
+          <Property Type="String" Name="RoadCharacteristics" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Type="Decimal" Name="ROADALIGNid" Precision="5" Scale="0" />
+          <Property Type="String" Name="RoadAlign" MaxLength="25" FixedLength="false" Unicode="false" />
+          <Property Type="Decimal" Name="ROADDESIGNid" Precision="5" Scale="0" />
+          <Property Type="String" Name="RoadDesign" MaxLength="25" FixedLength="false" Unicode="false" />
+          <Property Type="Decimal" Name="ROADTYPEid" Precision="5" Scale="0" />
+          <Property Type="String" Name="RoadType" MaxLength="25" FixedLength="false" Unicode="false" />
+          <Property Type="Decimal" Name="SURFACECONDITIONid" Precision="5" Scale="0" />
+          <Property Type="String" Name="SurfaceCondition" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Type="Decimal" Name="ROADCONDITIONid" Precision="5" Scale="0" />
+          <Property Type="String" Name="RoadCondition" MaxLength="60" FixedLength="false" Unicode="false" />
+          <Property Type="Decimal" Name="OPERATORREPORTREQUIRED" Precision="1" Scale="0" />
+          <Property Type="Decimal" Name="POLICEPHOTOVIDEOTAKEN" Precision="1" Scale="0" />
+          <Property Type="String" Name="AOTREPORTNUMBER" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="EMSRUNNUMBER" MaxLength="8" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="EMSAgencyid" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="EMSAgency" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="DESTINATIONHOSPITALid" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="DestinationHopital" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="EMSRUNNUMBER2" MaxLength="8" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="EMSAGENCY2id" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="EMSAgency2" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="DESTINATIONHOSPITAL2id" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="DestinationHopital2" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="DamageDescription" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="Boolean" Name="IsLocationChanged" />
+          <Property Type="Boolean" Name="NonReportable" />
+          <Property Type="String" Name="NonReportableAddress" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="VCSG_CITYTOWN" MaxLength="4" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="GIS_CITYTOWN" MaxLength="254" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="VCSG_EASTING" MaxLength="11" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="GIS_EASTING" MaxLength="254" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="VCSG_NORTHING" MaxLength="11" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="GIS_NORTHING" MaxLength="254" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="VCSG_AOTROUTE" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="GIS_AOTROUTE" MaxLength="254" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="VCSG_LRSNUMBER" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="GIS_LRSNUMBER" MaxLength="254" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="VCSG_LATITUDE" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="GIS_LATITUDE" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="VCSG_LONGITUDE" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="GIS_LONGITUDE" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="HOWMAPPED" MaxLength="254" FixedLength="false" Unicode="true" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="VCSGModelStoreContainer" CdmEntityContainer="VCSGEntities">
+          <EntitySetMapping Name="vw_PQT_Persons">
+            <EntityTypeMapping TypeName="VCSGModel.vw_PQT_Persons">
+              <MappingFragment StoreEntitySet="vw_PQT_Persons">
+                <ScalarProperty Name="REPORTINGAGENCY" ColumnName="REPORTINGAGENCY" />
+                <ScalarProperty Name="REPORTNUMBER" ColumnName="REPORTNUMBER" />
+                <ScalarProperty Name="UNITID" ColumnName="UNITID" />
+                <ScalarProperty Name="PERSONID" ColumnName="PERSONID" />
+                <ScalarProperty Name="PERSONTYPEid" ColumnName="PERSONTYPEid" />
+                <ScalarProperty Name="PersonType" ColumnName="PersonType" />
+                <ScalarProperty Name="OPRLICENSESTATECODE" ColumnName="OPRLICENSESTATECODE" />
+                <ScalarProperty Name="OPRLICENSECLASSid" ColumnName="OPRLICENSECLASSid" />
+                <ScalarProperty Name="OprLicenseClass" ColumnName="OprLicenseClass" />
+                <ScalarProperty Name="STATECODE" ColumnName="STATECODE" />
+                <ScalarProperty Name="SEX" ColumnName="SEX" />
+                <ScalarProperty Name="AGE" ColumnName="AGE" />
+                <ScalarProperty Name="SEATBELT" ColumnName="SEATBELT" />
+                <ScalarProperty Name="CDL" ColumnName="CDL" />
+                <ScalarProperty Name="SEATLOCATIONid" ColumnName="SEATLOCATIONid" />
+                <ScalarProperty Name="SeatLocation" ColumnName="SeatLocation" />
+                <ScalarProperty Name="INJURYid" ColumnName="INJURYid" />
+                <ScalarProperty Name="Injury" ColumnName="Injury" />
+                <ScalarProperty Name="EJECTEDid" ColumnName="EJECTEDid" />
+                <ScalarProperty Name="Ejected" ColumnName="Ejected" />
+                <ScalarProperty Name="RESTRAINTid" ColumnName="RESTRAINTid" />
+                <ScalarProperty Name="Restraint" ColumnName="Restraint" />
+                <ScalarProperty Name="PEDESTRIANCYCLEACTIONid" ColumnName="PEDESTRIANCYCLEACTIONid" />
+                <ScalarProperty Name="PedCycleAction" ColumnName="PedCycleAction" />
+                <ScalarProperty Name="PEDESTRIANCYCLELOCATIONid" ColumnName="PEDESTRIANCYCLELOCATIONid" />
+                <ScalarProperty Name="PedCycleLocation" ColumnName="PedCycleLocation" />
+                <ScalarProperty Name="INSURANCENAMEARS" ColumnName="INSURANCENAMEARS" />
+                <ScalarProperty Name="EQUIPMENT1ARS" ColumnName="EQUIPMENT1ARS" />
+                <ScalarProperty Name="AIRBAGDEPLOYED" ColumnName="AIRBAGDEPLOYED" />
+                <ScalarProperty Name="EXTRACTED" ColumnName="EXTRACTED" />
+                <ScalarProperty Name="PerceivedRace" ColumnName="PerceivedRace" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="vw_PQT_Units">
+            <EntityTypeMapping TypeName="VCSGModel.vw_PQT_Units">
+              <MappingFragment StoreEntitySet="vw_PQT_Units">
+                <ScalarProperty Name="REPORTINGAGENCY" ColumnName="REPORTINGAGENCY" />
+                <ScalarProperty Name="REPORTNUMBER" ColumnName="REPORTNUMBER" />
+                <ScalarProperty Name="UNITID" ColumnName="UNITID" />
+                <ScalarProperty Name="VEHNUMBER" ColumnName="VEHNUMBER" />
+                <ScalarProperty Name="UNITTYPEid" ColumnName="UNITTYPEid" />
+                <ScalarProperty Name="UnitType" ColumnName="UnitType" />
+                <ScalarProperty Name="VEHREGPLATETYPE" ColumnName="VEHREGPLATETYPE" />
+                <ScalarProperty Name="VEHREGSTATECODE" ColumnName="VEHREGSTATECODE" />
+                <ScalarProperty Name="VEHYEAR" ColumnName="VEHYEAR" />
+                <ScalarProperty Name="VEHMAKEid" ColumnName="VEHMAKEid" />
+                <ScalarProperty Name="VehMake" ColumnName="VehMake" />
+                <ScalarProperty Name="VEHMODEL" ColumnName="VEHMODEL" />
+                <ScalarProperty Name="ESTIMATEDSPEED" ColumnName="ESTIMATEDSPEED" />
+                <ScalarProperty Name="DAMAGEESTIMATE" ColumnName="DAMAGEESTIMATE" />
+                <ScalarProperty Name="DIRECTIONOFTRAVEL" ColumnName="DIRECTIONOFTRAVEL" />
+                <ScalarProperty Name="TOWEDBY" ColumnName="TOWEDBY" />
+                <ScalarProperty Name="VEHCOLLIDEDWITH" ColumnName="VEHCOLLIDEDWITH" />
+                <ScalarProperty Name="ALCOHOLTESTid" ColumnName="ALCOHOLTESTid" />
+                <ScalarProperty Name="AlcoholTest" ColumnName="AlcoholTest" />
+                <ScalarProperty Name="ALCOHOLTESTRESULT" ColumnName="ALCOHOLTESTRESULT" />
+                <ScalarProperty Name="DRUGTESTid" ColumnName="DRUGTESTid" />
+                <ScalarProperty Name="DrugTestResult" ColumnName="DrugTestResult" />
+                <ScalarProperty Name="DRUGTESTRESULT1id" ColumnName="DRUGTESTRESULT1id" />
+                <ScalarProperty Name="DrugTestResult1" ColumnName="DrugTestResult1" />
+                <ScalarProperty Name="DRUGTESTRESULT2id" ColumnName="DRUGTESTRESULT2id" />
+                <ScalarProperty Name="DrugTestResult2" ColumnName="DrugTestResult2" />
+                <ScalarProperty Name="DEFECTIVEEQUIPMENT1" ColumnName="DEFECTIVEEQUIPMENT1" />
+                <ScalarProperty Name="DEFECTIVEEQUIPMENT2" ColumnName="DEFECTIVEEQUIPMENT2" />
+                <ScalarProperty Name="DEFECTIVEEQUIPMENT3" ColumnName="DEFECTIVEEQUIPMENT3" />
+                <ScalarProperty Name="APPARENTOPERATORCOND1id" ColumnName="APPARENTOPERATORCOND1id" />
+                <ScalarProperty Name="ApparentOperatorCond1" ColumnName="ApparentOperatorCond1" />
+                <ScalarProperty Name="APPARENTOPERATORCOND2id" ColumnName="APPARENTOPERATORCOND2id" />
+                <ScalarProperty Name="ApparentOperatorCond2" ColumnName="ApparentOperatorCond2" />
+                <ScalarProperty Name="CONTRIBCIRCUMSTANCES1id" ColumnName="CONTRIBCIRCUMSTANCES1id" />
+                <ScalarProperty Name="ContribCircumstances1" ColumnName="ContribCircumstances1" />
+                <ScalarProperty Name="CONTRIBCIRCUMSTANCES2id" ColumnName="CONTRIBCIRCUMSTANCES2id" />
+                <ScalarProperty Name="ContribCircumstances2" ColumnName="ContribCircumstances2" />
+                <ScalarProperty Name="CITATIONTICKET1" ColumnName="CITATIONTICKET1" />
+                <ScalarProperty Name="CITATIONTICKET2" ColumnName="CITATIONTICKET2" />
+                <ScalarProperty Name="CITATIONTICKET3" ColumnName="CITATIONTICKET3" />
+                <ScalarProperty Name="VIOLATIONCODE1" ColumnName="VIOLATIONCODE1" />
+                <ScalarProperty Name="VIOLATIONCODE2" ColumnName="VIOLATIONCODE2" />
+                <ScalarProperty Name="VIOLATIONCODE3" ColumnName="VIOLATIONCODE3" />
+                <ScalarProperty Name="EMSRUNNUMBER" ColumnName="EMSRUNNUMBER" />
+                <ScalarProperty Name="EMSAGENCYid" ColumnName="EMSAGENCYid" />
+                <ScalarProperty Name="EMSAgency" ColumnName="EMSAgency" />
+                <ScalarProperty Name="DESTINATIONHOSPITALid" ColumnName="DESTINATIONHOSPITALid" />
+                <ScalarProperty Name="DestinationHospital" ColumnName="DestinationHospital" />
+                <ScalarProperty Name="TRAILERYEAR" ColumnName="TRAILERYEAR" />
+                <ScalarProperty Name="TRAILERMAKE" ColumnName="TRAILERMAKE" />
+                <ScalarProperty Name="TRAILERMODEL" ColumnName="TRAILERMODEL" />
+                <ScalarProperty Name="TRAILERPLATENUMBER" ColumnName="TRAILERPLATENUMBER" />
+                <ScalarProperty Name="TRAILERSTATE" ColumnName="TRAILERSTATE" />
+                <ScalarProperty Name="SCHOOLBUSRELATEDARS" ColumnName="SCHOOLBUSRELATEDARS" />
+                <ScalarProperty Name="UNOCCUPIED" ColumnName="UNOCCUPIED" />
+                <ScalarProperty Name="VehCollidedWith2" ColumnName="VehCollidedWith2" />
+                <ScalarProperty Name="TowedDueToDisablingDamage" ColumnName="TowedDueToDisablingDamage" />
+                <ScalarProperty Name="CommercialVehicle" ColumnName="CommercialVehicle" />
+                <ScalarProperty Name="ATV" ColumnName="ATV" />
+                <ScalarProperty Name="Snowmobile" ColumnName="Snowmobile" />
+                <ScalarProperty Name="DRUGTESTRESULT3id" ColumnName="DRUGTESTRESULT3id" />
+                <ScalarProperty Name="DrugTestResult3" ColumnName="DrugTestResult3" />
+                <ScalarProperty Name="DRUGTESTRESULT4id" ColumnName="DRUGTESTRESULT4id" />
+                <ScalarProperty Name="DrugTestResult4" ColumnName="DrugTestResult4" />
+                <ScalarProperty Name="SEQUENCEOFEVENT1id" ColumnName="SEQUENCEOFEVENT1id" />
+                <ScalarProperty Name="SequenceOfEvents1" ColumnName="SequenceOfEvents1" />
+                <ScalarProperty Name="SEQUENCEOFEVENT2id" ColumnName="SEQUENCEOFEVENT2id" />
+                <ScalarProperty Name="SequenceOfEvents2" ColumnName="SequenceOfEvents2" />
+                <ScalarProperty Name="SEQUENCEOFEVENT3id" ColumnName="SEQUENCEOFEVENT3id" />
+                <ScalarProperty Name="SequenceOfEvents3" ColumnName="SequenceOfEvents3" />
+                <ScalarProperty Name="SEQUENCEOFEVENT4id" ColumnName="SEQUENCEOFEVENT4id" />
+                <ScalarProperty Name="SequenceOfEvents4" ColumnName="SequenceOfEvents4" />
+                <ScalarProperty Name="INTERSTCARRIER" ColumnName="INTERSTCARRIER" />
+                <ScalarProperty Name="INTERSTCARRIERST" ColumnName="INTERSTCARRIERST" />
+                <ScalarProperty Name="SOURCE" ColumnName="SOURCE" />
+                <ScalarProperty Name="TOTALNUMOFAXLES" ColumnName="TOTALNUMOFAXLES" />
+                <ScalarProperty Name="GROSSVEHWTRATING" ColumnName="GROSSVEHWTRATING" />
+                <ScalarProperty Name="GROSSVEHWTRATINGUNITSid" ColumnName="GROSSVEHWTRATINGUNITSid" />
+                <ScalarProperty Name="GrossVehicleWeightUnit" ColumnName="GrossVehicleWeightUnit" />
+                <ScalarProperty Name="VEHICLELENGTH" ColumnName="VEHICLELENGTH" />
+                <ScalarProperty Name="VEHICLELENGTHUNITSid" ColumnName="VEHICLELENGTHUNITSid" />
+                <ScalarProperty Name="VehicleLengthUnit" ColumnName="VehicleLengthUnit" />
+                <ScalarProperty Name="TRAILORLENGTH" ColumnName="TRAILORLENGTH" />
+                <ScalarProperty Name="TRAILORLENGTHUNITSid" ColumnName="TRAILORLENGTHUNITSid" />
+                <ScalarProperty Name="TrailerLenghtUnit" ColumnName="TrailerLenghtUnit" />
+                <ScalarProperty Name="TRAILORLICENSESTATE" ColumnName="TRAILORLICENSESTATE" />
+                <ScalarProperty Name="HAZMATPLACARD" ColumnName="HAZMATPLACARD" />
+                <ScalarProperty Name="HAZMATSPILLED" ColumnName="HAZMATSPILLED" />
+                <ScalarProperty Name="HAZMATCLASSNUM" ColumnName="HAZMATCLASSNUM" />
+                <ScalarProperty Name="VEHCONFIGURATIONid" ColumnName="VEHCONFIGURATIONid" />
+                <ScalarProperty Name="VehicleConfiguration" ColumnName="VehicleConfiguration" />
+                <ScalarProperty Name="CARGOBODYTYPEid" ColumnName="CARGOBODYTYPEid" />
+                <ScalarProperty Name="CargoBodyType" ColumnName="CargoBodyType" />
+                <ScalarProperty Name="Source2" ColumnName="Source2" />
+                <ScalarProperty Name="Source3" ColumnName="Source3" />
+                <ScalarProperty Name="Source4" ColumnName="Source4" />
+                <ScalarProperty Name="GVWROrGCWRid" ColumnName="GVWROrGCWRid" />
+                <ScalarProperty Name="GVWRorGCWR" ColumnName="GVWRorGCWR" />
+                <ScalarProperty Name="IntraStCarrier" ColumnName="IntraStCarrier" />
+                <ScalarProperty Name="GovernmentCarrier" ColumnName="GovernmentCarrier" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFCITYCODEs">
+            <EntityTypeMapping TypeName="VCSGModel.REFCITYCODE">
+              <MappingFragment StoreEntitySet="REFCITYCODE">
+                <ScalarProperty Name="SORTORDER" ColumnName="SORTORDER" />
+                <ScalarProperty Name="COUNTYCODE" ColumnName="COUNTYCODE" />
+                <ScalarProperty Name="ZIPCODE" ColumnName="ZIPCODE" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFCOUNTYCODEs">
+            <EntityTypeMapping TypeName="VCSGModel.REFCOUNTYCODE">
+              <MappingFragment StoreEntitySet="REFCOUNTYCODE">
+                <ScalarProperty Name="SORTORDER" ColumnName="SORTORDER" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="vw_PQT_AccidentHeader">
+            <EntityTypeMapping TypeName="VCSGModel.vw_PQT_AccidentHeader">
+              <MappingFragment StoreEntitySet="vw_PQT_AccidentHeader">
+                <ScalarProperty Name="HOWMAPPED" ColumnName="HOWMAPPED" />
+                <ScalarProperty Name="GIS_LONGITUDE" ColumnName="GIS_LONGITUDE" />
+                <ScalarProperty Name="VCSG_LONGITUDE" ColumnName="VCSG_LONGITUDE" />
+                <ScalarProperty Name="GIS_LATITUDE" ColumnName="GIS_LATITUDE" />
+                <ScalarProperty Name="VCSG_LATITUDE" ColumnName="VCSG_LATITUDE" />
+                <ScalarProperty Name="GIS_LRSNUMBER" ColumnName="GIS_LRSNUMBER" />
+                <ScalarProperty Name="VCSG_LRSNUMBER" ColumnName="VCSG_LRSNUMBER" />
+                <ScalarProperty Name="GIS_AOTROUTE" ColumnName="GIS_AOTROUTE" />
+                <ScalarProperty Name="VCSG_AOTROUTE" ColumnName="VCSG_AOTROUTE" />
+                <ScalarProperty Name="GIS_NORTHING" ColumnName="GIS_NORTHING" />
+                <ScalarProperty Name="VCSG_NORTHING" ColumnName="VCSG_NORTHING" />
+                <ScalarProperty Name="GIS_EASTING" ColumnName="GIS_EASTING" />
+                <ScalarProperty Name="VCSG_EASTING" ColumnName="VCSG_EASTING" />
+                <ScalarProperty Name="GIS_CITYTOWN" ColumnName="GIS_CITYTOWN" />
+                <ScalarProperty Name="VCSG_CITYTOWN" ColumnName="VCSG_CITYTOWN" />
+                <ScalarProperty Name="NonReportableAddress" ColumnName="NonReportableAddress" />
+                <ScalarProperty Name="NonReportable" ColumnName="NonReportable" />
+                <ScalarProperty Name="IsLocationChanged" ColumnName="IsLocationChanged" />
+                <ScalarProperty Name="DamageDescription" ColumnName="DamageDescription" />
+                <ScalarProperty Name="DestinationHopital2" ColumnName="DestinationHopital2" />
+                <ScalarProperty Name="DESTINATIONHOSPITAL2id" ColumnName="DESTINATIONHOSPITAL2id" />
+                <ScalarProperty Name="EMSAgency2" ColumnName="EMSAgency2" />
+                <ScalarProperty Name="EMSAGENCY2id" ColumnName="EMSAGENCY2id" />
+                <ScalarProperty Name="EMSRUNNUMBER2" ColumnName="EMSRUNNUMBER2" />
+                <ScalarProperty Name="DestinationHopital" ColumnName="DestinationHopital" />
+                <ScalarProperty Name="DESTINATIONHOSPITALid" ColumnName="DESTINATIONHOSPITALid" />
+                <ScalarProperty Name="EMSAgency" ColumnName="EMSAgency" />
+                <ScalarProperty Name="EMSAgencyid" ColumnName="EMSAgencyid" />
+                <ScalarProperty Name="EMSRUNNUMBER" ColumnName="EMSRUNNUMBER" />
+                <ScalarProperty Name="AOTREPORTNUMBER" ColumnName="AOTREPORTNUMBER" />
+                <ScalarProperty Name="POLICEPHOTOVIDEOTAKEN" ColumnName="POLICEPHOTOVIDEOTAKEN" />
+                <ScalarProperty Name="OPERATORREPORTREQUIRED" ColumnName="OPERATORREPORTREQUIRED" />
+                <ScalarProperty Name="RoadCondition" ColumnName="RoadCondition" />
+                <ScalarProperty Name="ROADCONDITIONid" ColumnName="ROADCONDITIONid" />
+                <ScalarProperty Name="SurfaceCondition" ColumnName="SurfaceCondition" />
+                <ScalarProperty Name="SURFACECONDITIONid" ColumnName="SURFACECONDITIONid" />
+                <ScalarProperty Name="RoadType" ColumnName="RoadType" />
+                <ScalarProperty Name="ROADTYPEid" ColumnName="ROADTYPEid" />
+                <ScalarProperty Name="RoadDesign" ColumnName="RoadDesign" />
+                <ScalarProperty Name="ROADDESIGNid" ColumnName="ROADDESIGNid" />
+                <ScalarProperty Name="RoadAlign" ColumnName="RoadAlign" />
+                <ScalarProperty Name="ROADALIGNid" ColumnName="ROADALIGNid" />
+                <ScalarProperty Name="RoadCharacteristics" ColumnName="RoadCharacteristics" />
+                <ScalarProperty Name="ROADCHARACTERISTICSid" ColumnName="ROADCHARACTERISTICSid" />
+                <ScalarProperty Name="Light" ColumnName="Light" />
+                <ScalarProperty Name="LIGHTid" ColumnName="LIGHTid" />
+                <ScalarProperty Name="WeatherCondition" ColumnName="WeatherCondition" />
+                <ScalarProperty Name="WEATHERCONDITIONid" ColumnName="WEATHERCONDITIONid" />
+                <ScalarProperty Name="TrafficSignals" ColumnName="TrafficSignals" />
+                <ScalarProperty Name="TRAFFICSIGNALSid" ColumnName="TRAFFICSIGNALSid" />
+                <ScalarProperty Name="CrashType" ColumnName="CrashType" />
+                <ScalarProperty Name="CRASHTYPEid" ColumnName="CRASHTYPEid" />
+                <ScalarProperty Name="AOTACTUALMILEPOINT" ColumnName="AOTACTUALMILEPOINT" />
+                <ScalarProperty Name="RoadGroup" ColumnName="RoadGroup" />
+                <ScalarProperty Name="AOTROADWAYGROUPid" ColumnName="AOTROADWAYGROUPid" />
+                <ScalarProperty Name="MILEMARKER3" ColumnName="MILEMARKER3" />
+                <ScalarProperty Name="MILEMARKER2" ColumnName="MILEMARKER2" />
+                <ScalarProperty Name="MILEMARKER1" ColumnName="MILEMARKER1" />
+                <ScalarProperty Name="DirOfCollision" ColumnName="DirOfCollision" />
+                <ScalarProperty Name="DIROFCOLLISIONid" ColumnName="DIROFCOLLISIONid" />
+                <ScalarProperty Name="DIRFROMNEARESTINTST" ColumnName="DIRFROMNEARESTINTST" />
+                <ScalarProperty Name="POSTEDSPEED" ColumnName="POSTEDSPEED" />
+                <ScalarProperty Name="DISTANCEFROMUNITS" ColumnName="DISTANCEFROMUNITS" />
+                <ScalarProperty Name="DISTANCEFROMNEARESTSTR" ColumnName="DISTANCEFROMNEARESTSTR" />
+                <ScalarProperty Name="INTERSECTIONWITH" ColumnName="INTERSECTIONWITH" />
+                <ScalarProperty Name="I_NUMBER" ColumnName="I_NUMBER" />
+                <ScalarProperty Name="US_NUMBER" ColumnName="US_NUMBER" />
+                <ScalarProperty Name="VT_NUMBER" ColumnName="VT_NUMBER" />
+                <ScalarProperty Name="TH_NUMBER" ColumnName="TH_NUMBER" />
+                <ScalarProperty Name="STREETADDRESS" ColumnName="STREETADDRESS" />
+                <ScalarProperty Name="ACCIDENTDATE" ColumnName="ACCIDENTDATE" />
+                <ScalarProperty Name="ACCIDENTTIME" ColumnName="ACCIDENTTIME" />
+                <ScalarProperty Name="LOCALID" ColumnName="LOCALID" />
+                <ScalarProperty Name="REPORTNUMBER" ColumnName="REPORTNUMBER" />
+                <ScalarProperty Name="ReportingAgency" ColumnName="ReportingAgency" />
+                <ScalarProperty Name="REPORTINGAGENCYid" ColumnName="REPORTINGAGENCYid" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+        <DesignerProperty Name="UseLegacyProvider" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

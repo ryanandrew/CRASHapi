@@ -1,0 +1,2830 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="VCSGModel1.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="VCSGModel1StoreContainer">
+          <EntitySet Name="REFACCESSCONTROL" EntityType="VCSGModel1.Store.REFACCESSCONTROL" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFADMINCLASS" EntityType="VCSGModel1.Store.REFADMINCLASS" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFALCOHOLTEST" EntityType="VCSGModel1.Store.REFALCOHOLTEST" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFAPPARANTOPCOND" EntityType="VCSGModel1.Store.REFAPPARANTOPCOND" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFCARGOBODYTYPE" EntityType="VCSGModel1.Store.REFCARGOBODYTYPE" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFCENSUSCATEGORY" EntityType="VCSGModel1.Store.REFCENSUSCATEGORY" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFCITYCODE" EntityType="VCSGModel1.Store.REFCITYCODE" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFCLASS1TOWNHIGHWAYS" EntityType="VCSGModel1.Store.REFCLASS1TOWNHIGHWAYS" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFCLOSEYEAR" EntityType="VCSGModel1.Store.REFCLOSEYEAR" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFCONTRIBCIRCUMSTANCES" EntityType="VCSGModel1.Store.REFCONTRIBCIRCUMSTANCES" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFCOUNTYCODE" EntityType="VCSGModel1.Store.REFCOUNTYCODE" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFCRASHTYPE" EntityType="VCSGModel1.Store.REFCRASHTYPE" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFDEFECTIVEEQUIPMENT" EntityType="VCSGModel1.Store.REFDEFECTIVEEQUIPMENT" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFDIRECTION" EntityType="VCSGModel1.Store.REFDIRECTION" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFDIROFCOLLISION" EntityType="VCSGModel1.Store.REFDIROFCOLLISION" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFDISTANCETYPE" EntityType="VCSGModel1.Store.REFDISTANCETYPE" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFDOMAINNAME" EntityType="VCSGModel1.Store.REFDOMAINNAME" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFDRUGTEST" EntityType="VCSGModel1.Store.REFDRUGTEST" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFDRUGTESTRESULT" EntityType="VCSGModel1.Store.REFDRUGTESTRESULT" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFEJECTED" EntityType="VCSGModel1.Store.REFEJECTED" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFEMSAGENCIES" EntityType="VCSGModel1.Store.REFEMSAGENCIES" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFEQUIPMENTARS" EntityType="VCSGModel1.Store.REFEQUIPMENTARS" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFFASYSDESIGNWAY" EntityType="VCSGModel1.Store.REFFASYSDESIGNWAY" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFFASYSTRAVELWAY" EntityType="VCSGModel1.Store.REFFASYSTRAVELWAY" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFFAUAREA" EntityType="VCSGModel1.Store.REFFAUAREA" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFFIVEYRIMPROVEMENTS" EntityType="VCSGModel1.Store.REFFIVEYRIMPROVEMENTS" store:Type="Tables" store:Schema="dbo" store:Name="REFFIVEYRIMPROVEMENTS">
+            <DefiningQuery>SELECT 
+      [REFFIVEYRIMPROVEMENTS].[ROUTECODE] AS [ROUTECODE], 
+      [REFFIVEYRIMPROVEMENTS].[ROUTENAME] AS [ROUTENAME], 
+      [REFFIVEYRIMPROVEMENTS].[CITYCODE] AS [CITYCODE], 
+      [REFFIVEYRIMPROVEMENTS].[BEGINMILEPOINT] AS [BEGINMILEPOINT], 
+      [REFFIVEYRIMPROVEMENTS].[ENDMILEPOINT] AS [ENDMILEPOINT]
+      FROM [dbo].[REFFIVEYRIMPROVEMENTS] AS [REFFIVEYRIMPROVEMENTS]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="REFFUNCTCLASS" EntityType="VCSGModel1.Store.REFFUNCTCLASS" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFGOVLEVOFCTR" EntityType="VCSGModel1.Store.REFGOVLEVOFCTR" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="RefGVWROrGCWR" EntityType="VCSGModel1.Store.RefGVWROrGCWR" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFHIGHWAYDISTRICT" EntityType="VCSGModel1.Store.REFHIGHWAYDISTRICT" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFHOSPITALS" EntityType="VCSGModel1.Store.REFHOSPITALS" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="RefImageType" EntityType="VCSGModel1.Store.RefImageType" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFINJURY" EntityType="VCSGModel1.Store.REFINJURY" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFINSURANCECO" EntityType="VCSGModel1.Store.REFINSURANCECO" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFINTERSTATEROUTES" EntityType="VCSGModel1.Store.REFINTERSTATEROUTES" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFINVENRTNUM" EntityType="VCSGModel1.Store.REFINVENRTNUM" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFLENGTHUNITS" EntityType="VCSGModel1.Store.REFLENGTHUNITS" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFLICENSECLASS" EntityType="VCSGModel1.Store.REFLICENSECLASS" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFLICRESTRICTPERMISS" EntityType="VCSGModel1.Store.REFLICRESTRICTPERMISS" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFLIGHT" EntityType="VCSGModel1.Store.REFLIGHT" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFLRSROUTEMILEAGE" EntityType="VCSGModel1.Store.REFLRSROUTEMILEAGE" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFLRSROUTENUMBERS" EntityType="VCSGModel1.Store.REFLRSROUTENUMBERS" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFMEDIANTYPE" EntityType="VCSGModel1.Store.REFMEDIANTYPE" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFMILEPTIND" EntityType="VCSGModel1.Store.REFMILEPTIND" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFMUNICIPALITY" EntityType="VCSGModel1.Store.REFMUNICIPALITY" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFPARKWAYTRUCKS" EntityType="VCSGModel1.Store.REFPARKWAYTRUCKS" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFPAVEMENTTYPE" EntityType="VCSGModel1.Store.REFPAVEMENTTYPE" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFPEDESTRIANCYCLEACTION" EntityType="VCSGModel1.Store.REFPEDESTRIANCYCLEACTION" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFPEDESTRIANCYCLELOCATION" EntityType="VCSGModel1.Store.REFPEDESTRIANCYCLELOCATION" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="RefPerceivedRace" EntityType="VCSGModel1.Store.RefPerceivedRace" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFPERSONTYPE" EntityType="VCSGModel1.Store.REFPERSONTYPE" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFPLATETYPE" EntityType="VCSGModel1.Store.REFPLATETYPE" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFPOPSIZEGRP" EntityType="VCSGModel1.Store.REFPOPSIZEGRP" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFPOSTEDSPEED" EntityType="VCSGModel1.Store.REFPOSTEDSPEED" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFRECORDTYPE" EntityType="VCSGModel1.Store.REFRECORDTYPE" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFREPORTINGAGENCY" EntityType="VCSGModel1.Store.REFREPORTINGAGENCY" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFRESTRAINT" EntityType="VCSGModel1.Store.REFRESTRAINT" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFROADALIGN" EntityType="VCSGModel1.Store.REFROADALIGN" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFROADCHARACTERISTICS" EntityType="VCSGModel1.Store.REFROADCHARACTERISTICS" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFROADCONDITIONS" EntityType="VCSGModel1.Store.REFROADCONDITIONS" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFROADDESIGN" EntityType="VCSGModel1.Store.REFROADDESIGN" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFROADGROUPS" EntityType="VCSGModel1.Store.REFROADGROUPS" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFROADTYPE" EntityType="VCSGModel1.Store.REFROADTYPE" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFROUTECODES" EntityType="VCSGModel1.Store.REFROUTECODES" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFROUTECODESBK" EntityType="VCSGModel1.Store.REFROUTECODESBK" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFSCHOOLBUSRELATEDARS" EntityType="VCSGModel1.Store.REFSCHOOLBUSRELATEDARS" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFSEATLOCATION" EntityType="VCSGModel1.Store.REFSEATLOCATION" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFSEQUENCEOFEVENTS" EntityType="VCSGModel1.Store.REFSEQUENCEOFEVENTS" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFSEX" EntityType="VCSGModel1.Store.REFSEX" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFSHOULDER" EntityType="VCSGModel1.Store.REFSHOULDER" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFSOURCEOFCARRIERNAME" EntityType="VCSGModel1.Store.REFSOURCEOFCARRIERNAME" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFSPECIALSYSTEMS" EntityType="VCSGModel1.Store.REFSPECIALSYSTEMS" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFSTATE" EntityType="VCSGModel1.Store.REFSTATE" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFSTATECLASS" EntityType="VCSGModel1.Store.REFSTATECLASS" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFSTDTABLESAMS" EntityType="VCSGModel1.Store.REFSTDTABLESAMS" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFSTDTABLESCRS" EntityType="VCSGModel1.Store.REFSTDTABLESCRS" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFSTREETS" EntityType="VCSGModel1.Store.REFSTREETS" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFSURFACECONDITION" EntityType="VCSGModel1.Store.REFSURFACECONDITION" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFTA1FUNCGRPS" EntityType="VCSGModel1.Store.REFTA1FUNCGRPS" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFTA1RELATEDDATA" EntityType="VCSGModel1.Store.REFTA1RELATEDDATA" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFTOLLFACILITY" EntityType="VCSGModel1.Store.REFTOLLFACILITY" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFTOWNCODE" EntityType="VCSGModel1.Store.REFTOWNCODE" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFTRAFFICSIGNALS" EntityType="VCSGModel1.Store.REFTRAFFICSIGNALS" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFTRANSACTIONCODE" EntityType="VCSGModel1.Store.REFTRANSACTIONCODE" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFTRAVELRTCAT" EntityType="VCSGModel1.Store.REFTRAVELRTCAT" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFTRAVELRTID" EntityType="VCSGModel1.Store.REFTRAVELRTID" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFUNITTYPE" EntityType="VCSGModel1.Store.REFUNITTYPE" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFVEHCOLLIDEDWITH" EntityType="VCSGModel1.Store.REFVEHCOLLIDEDWITH" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFVEHCONFIGURATION" EntityType="VCSGModel1.Store.REFVEHCONFIGURATION" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFVEHDAMAGECODE" EntityType="VCSGModel1.Store.REFVEHDAMAGECODE" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFVEHDAMAGEEST" EntityType="VCSGModel1.Store.REFVEHDAMAGEEST" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFVEHMAKE" EntityType="VCSGModel1.Store.REFVEHMAKE" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFVIOLATIONS" EntityType="VCSGModel1.Store.REFVIOLATIONS" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFWEATHERCONDITIONS" EntityType="VCSGModel1.Store.REFWEATHERCONDITIONS" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REFWEIGHTUNITS" EntityType="VCSGModel1.Store.REFWEIGHTUNITS" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="REFTA1FUNCGRPSREFFUNCTCLASS" Association="VCSGModel1.Store.REFTA1FUNCGRPSREFFUNCTCLASS">
+            <End Role="REFTA1FUNCGRPS" EntitySet="REFTA1FUNCGRPS" />
+            <End Role="REFFUNCTCLASS" EntitySet="REFFUNCTCLASS" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="REFACCESSCONTROL">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="numeric" Nullable="false" Precision="38" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="50" />
+          <Property Name="SORTORDER" Type="numeric" Precision="5" />
+        </EntityType>
+        <EntityType Name="REFADMINCLASS">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="numeric" Nullable="false" Precision="38" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="50" />
+          <Property Name="SORTORDER" Type="numeric" Precision="5" />
+        </EntityType>
+        <EntityType Name="REFALCOHOLTEST">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="numeric" Nullable="false" Precision="5" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="35" />
+          <Property Name="SORTORDER" Type="numeric" Precision="5" />
+        </EntityType>
+        <EntityType Name="REFAPPARANTOPCOND">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="numeric" Nullable="false" Precision="5" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="50" />
+          <Property Name="SORTORDER" Type="numeric" Precision="5" />
+        </EntityType>
+        <EntityType Name="REFCARGOBODYTYPE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="numeric" Nullable="false" Precision="5" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="50" />
+          <Property Name="SORTORDER" Type="numeric" Precision="5" />
+        </EntityType>
+        <EntityType Name="REFCENSUSCATEGORY">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="numeric" Nullable="false" Precision="38" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="100" />
+          <Property Name="SORTORDER" Type="numeric" Precision="5" />
+        </EntityType>
+        <EntityType Name="REFCITYCODE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="varchar" Nullable="false" MaxLength="4" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="30" />
+          <Property Name="ZIPCODE" Type="varchar" MaxLength="30" />
+          <Property Name="COUNTYCODE" Type="varchar" MaxLength="2" />
+          <Property Name="SORTORDER" Type="numeric" Precision="5" />
+        </EntityType>
+        <EntityType Name="REFCLASS1TOWNHIGHWAYS">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="numeric" Nullable="false" Precision="38" />
+          <Property Name="ROUTECODE" Type="varchar" MaxLength="5" />
+          <Property Name="ROUTENAME" Type="varchar" MaxLength="30" />
+          <Property Name="CITYCODE" Type="varchar" MaxLength="5" />
+          <Property Name="CITYNAME" Type="varchar" MaxLength="30" />
+          <Property Name="BEGINMILEPOINT" Type="numeric" Precision="10" Scale="2" />
+          <Property Name="ENDMILEPOINT" Type="numeric" Precision="10" Scale="2" />
+          <Property Name="SORTORDER" Type="numeric" Precision="5" />
+        </EntityType>
+        <EntityType Name="REFCLOSEYEAR">
+          <Key>
+            <PropertyRef Name="CYEAR" />
+          </Key>
+          <Property Name="CYEAR" Type="numeric" Nullable="false" Precision="4" />
+        </EntityType>
+        <EntityType Name="REFCONTRIBCIRCUMSTANCES">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="numeric" Nullable="false" Precision="5" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="100" />
+          <Property Name="SORTORDER" Type="numeric" Precision="5" />
+        </EntityType>
+        <EntityType Name="REFCOUNTYCODE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="varchar" Nullable="false" MaxLength="2" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="20" />
+          <Property Name="SORTORDER" Type="numeric" Precision="5" />
+        </EntityType>
+        <EntityType Name="REFCRASHTYPE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="numeric" Nullable="false" Precision="5" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="50" />
+          <Property Name="SORTORDER" Type="numeric" Precision="5" />
+        </EntityType>
+        <EntityType Name="REFDEFECTIVEEQUIPMENT">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="numeric" Nullable="false" Precision="5" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="40" />
+          <Property Name="SORTORDER" Type="numeric" Precision="5" />
+        </EntityType>
+        <EntityType Name="REFDIRECTION">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="varchar" Nullable="false" MaxLength="1" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="30" />
+          <Property Name="SORTORDER" Type="numeric" Precision="5" />
+        </EntityType>
+        <EntityType Name="REFDIROFCOLLISION">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="numeric" Nullable="false" Precision="5" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="100" />
+          <Property Name="SORTORDER" Type="numeric" Precision="5" />
+        </EntityType>
+        <EntityType Name="REFDISTANCETYPE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="numeric" Nullable="false" Precision="5" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="25" />
+          <Property Name="SORTORDER" Type="numeric" Precision="5" />
+        </EntityType>
+        <EntityType Name="REFDOMAINNAME">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="numeric" Nullable="false" Precision="38" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="50" />
+          <Property Name="SORTORDER" Type="numeric" Precision="5" />
+        </EntityType>
+        <EntityType Name="REFDRUGTEST">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="numeric" Nullable="false" Precision="5" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="35" />
+          <Property Name="SORTORDER" Type="numeric" Precision="5" />
+        </EntityType>
+        <EntityType Name="REFDRUGTESTRESULT">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="numeric" Nullable="false" Precision="5" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="35" />
+          <Property Name="SORTORDER" Type="numeric" Precision="5" />
+        </EntityType>
+        <EntityType Name="REFEJECTED">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="numeric" Nullable="false" Precision="5" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="35" />
+          <Property Name="SORTORDER" Type="numeric" Precision="5" />
+        </EntityType>
+        <EntityType Name="REFEMSAGENCIES">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="varchar" Nullable="false" MaxLength="3" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="50" />
+          <Property Name="SORTORDER" Type="numeric" Precision="5" />
+        </EntityType>
+        <EntityType Name="REFEQUIPMENTARS">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="varchar" Nullable="false" MaxLength="1" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="50" />
+          <Property Name="STATECODE" Type="numeric" Nullable="false" Precision="1" />
+        </EntityType>
+        <EntityType Name="REFFASYSDESIGNWAY">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="numeric" Nullable="false" Precision="38" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="50" />
+          <Property Name="FAFLAG" Type="numeric" Nullable="false" Precision="1" />
+          <Property Name="SORTORDER" Type="numeric" Precision="5" />
+        </EntityType>
+        <EntityType Name="REFFASYSTRAVELWAY">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="numeric" Nullable="false" Precision="38" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="50" />
+          <Property Name="SORTORDER" Type="numeric" Precision="5" />
+        </EntityType>
+        <EntityType Name="REFFAUAREA">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="numeric" Nullable="false" Precision="38" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="50" />
+          <Property Name="SORTORDER" Type="numeric" Precision="5" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'VCSG.dbo.REFFIVEYRIMPROVEMENTS' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="REFFIVEYRIMPROVEMENTS">
+          <Key>
+            <PropertyRef Name="ROUTECODE" />
+            <PropertyRef Name="CITYCODE" />
+          </Key>
+          <Property Name="ROUTECODE" Type="varchar" Nullable="false" MaxLength="5" />
+          <Property Name="ROUTENAME" Type="varchar" MaxLength="30" />
+          <Property Name="CITYCODE" Type="varchar" Nullable="false" MaxLength="5" />
+          <Property Name="BEGINMILEPOINT" Type="float" />
+          <Property Name="ENDMILEPOINT" Type="float" />
+        </EntityType>
+        <EntityType Name="REFFUNCTCLASS">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="numeric" Nullable="false" Precision="38" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="80" />
+          <Property Name="FAUAREAID" Type="numeric" Precision="38" />
+          <Property Name="URBANFLAG" Type="numeric" Nullable="false" Precision="1" />
+          <Property Name="ABREVIATEDNAME" Type="varchar" MaxLength="20" />
+          <Property Name="SORTORDER" Type="numeric" Precision="5" />
+        </EntityType>
+        <EntityType Name="REFGOVLEVOFCTR">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="numeric" Nullable="false" Precision="38" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="85" />
+          <Property Name="SORTORDER" Type="numeric" Precision="5" />
+        </EntityType>
+        <EntityType Name="RefGVWROrGCWR">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="smallint" Nullable="false" />
+          <Property Name="Description" Type="varchar" MaxLength="50" />
+          <Property Name="SortOrder" Type="smallint" />
+          <Property Name="NoDisplay" Type="bit" />
+          <Property Name="SafetyNetRef" Type="smallint" />
+        </EntityType>
+        <EntityType Name="REFHIGHWAYDISTRICT">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="varchar" Nullable="false" MaxLength="2" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="20" />
+          <Property Name="SORTORDER" Type="numeric" Precision="5" />
+        </EntityType>
+        <EntityType Name="REFHOSPITALS">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="varchar" Nullable="false" MaxLength="3" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="50" />
+          <Property Name="SORTORDER" Type="numeric" Precision="5" />
+        </EntityType>
+        <EntityType Name="RefImageType">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="smallint" Nullable="false" />
+          <Property Name="Description" Type="varchar" MaxLength="50" />
+          <Property Name="NoDisplay" Type="bit" />
+        </EntityType>
+        <EntityType Name="REFINJURY">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="numeric" Nullable="false" Precision="5" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="40" />
+          <Property Name="SORTORDER" Type="numeric" Precision="5" />
+          <Property Name="SEVERITYLEVEL" Type="numeric" Precision="5" />
+        </EntityType>
+        <EntityType Name="REFINSURANCECO">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="numeric" Nullable="false" Precision="5" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="40" />
+          <Property Name="SORTORDER" Type="numeric" Precision="5" />
+        </EntityType>
+        <EntityType Name="REFINTERSTATEROUTES">
+          <Key>
+            <PropertyRef Name="INTERSTATEROUTE" />
+          </Key>
+          <Property Name="INTERSTATEROUTE" Type="varchar" Nullable="false" MaxLength="4" />
+        </EntityType>
+        <EntityType Name="REFINVENRTNUM">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="numeric" Nullable="false" Precision="38" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="60" />
+          <Property Name="SORTORDER" Type="numeric" Precision="5" />
+        </EntityType>
+        <EntityType Name="REFLENGTHUNITS">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="numeric" Nullable="false" Precision="5" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="25" />
+          <Property Name="SORTORDER" Type="numeric" Precision="5" />
+        </EntityType>
+        <EntityType Name="REFLICENSECLASS">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="varchar" Nullable="false" MaxLength="2" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="50" />
+          <Property Name="SORTORDER" Type="numeric" Precision="5" />
+        </EntityType>
+        <EntityType Name="REFLICRESTRICTPERMISS">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="varchar" Nullable="false" MaxLength="2" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="50" />
+          <Property Name="STATECODE" Type="numeric" Nullable="false" Precision="1" />
+          <Property Name="SORTORDER" Type="numeric" Precision="5" />
+        </EntityType>
+        <EntityType Name="REFLIGHT">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="numeric" Nullable="false" Precision="5" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="35" />
+          <Property Name="SORTORDER" Type="numeric" Precision="5" />
+        </EntityType>
+        <EntityType Name="REFLRSROUTEMILEAGE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="numeric" Nullable="false" Precision="38" />
+          <Property Name="ROUTENUMBER" Type="varchar" MaxLength="255" />
+          <Property Name="COUNTYTOWNCODE" Type="varchar" MaxLength="255" />
+          <Property Name="TOWN" Type="varchar" MaxLength="255" />
+          <Property Name="BEGINNING_MILEAGE" Type="float" />
+          <Property Name="ENDINGMILEAGE" Type="float" />
+          <Property Name="ACCUMMILEAGE" Type="float" />
+          <Property Name="DIRECTION" Type="varchar" MaxLength="1" />
+          <Property Name="PRINTUNKNOWNS" Type="numeric" Nullable="false" Precision="1" />
+          <Property Name="EFFECTIVEDATE" Type="datetime" />
+          <Property Name="ABEGINNING_MILEAGE" Type="float" />
+          <Property Name="AENDING_MILEAGE" Type="float" />
+          <Property Name="AACCUMMILEAGE" Type="float" />
+        </EntityType>
+        <EntityType Name="REFLRSROUTENUMBERS">
+          <Key>
+            <PropertyRef Name="IDKEY" />
+          </Key>
+          <Property Name="IDKEY" Type="numeric" Nullable="false" Precision="38" />
+          <Property Name="ID" Type="varchar" MaxLength="5" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="255" />
+          <Property Name="ROUTENUMBERID" Type="varchar" MaxLength="25" />
+          <Property Name="DIRECTION" Type="varchar" MaxLength="1" />
+        </EntityType>
+        <EntityType Name="REFMEDIANTYPE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="numeric" Nullable="false" Precision="38" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="70" />
+          <Property Name="SORTORDER" Type="numeric" Precision="5" />
+        </EntityType>
+        <EntityType Name="REFMILEPTIND">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="numeric" Nullable="false" Precision="38" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="50" />
+          <Property Name="SORTORDER" Type="numeric" Precision="5" />
+        </EntityType>
+        <EntityType Name="REFMUNICIPALITY">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="numeric" Nullable="false" Precision="38" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="50" />
+          <Property Name="SORTORDER" Type="numeric" Precision="5" />
+        </EntityType>
+        <EntityType Name="REFPARKWAYTRUCKS">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="numeric" Nullable="false" Precision="38" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="50" />
+          <Property Name="SORTORDER" Type="numeric" Precision="5" />
+        </EntityType>
+        <EntityType Name="REFPAVEMENTTYPE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="numeric" Nullable="false" Precision="38" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="50" />
+          <Property Name="SORTORDER" Type="numeric" Precision="5" />
+        </EntityType>
+        <EntityType Name="REFPEDESTRIANCYCLEACTION">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="numeric" Nullable="false" Precision="5" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="60" />
+          <Property Name="SORTORDER" Type="numeric" Precision="5" />
+        </EntityType>
+        <EntityType Name="REFPEDESTRIANCYCLELOCATION">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="numeric" Nullable="false" Precision="5" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="80" />
+          <Property Name="SORTORDER" Type="numeric" Precision="5" />
+        </EntityType>
+        <EntityType Name="RefPerceivedRace">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="smallint" Nullable="false" />
+          <Property Name="Description" Type="varchar" MaxLength="50" />
+          <Property Name="SortOrder" Type="smallint" />
+          <Property Name="NoDisplay" Type="bit" />
+          <Property Name="SpillmanRef" Type="varchar" MaxLength="5" />
+        </EntityType>
+        <EntityType Name="REFPERSONTYPE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="numeric" Nullable="false" Precision="5" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="50" />
+          <Property Name="SORTORDER" Type="numeric" Precision="5" />
+          <Property Name="VEHTYPEID" Type="numeric" Precision="5" />
+        </EntityType>
+        <EntityType Name="REFPLATETYPE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="varchar" Nullable="false" MaxLength="2" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="50" />
+          <Property Name="SORTORDER" Type="numeric" Precision="5" />
+        </EntityType>
+        <EntityType Name="REFPOPSIZEGRP">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="numeric" Nullable="false" Precision="38" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="50" />
+          <Property Name="SORTORDER" Type="numeric" Precision="5" />
+        </EntityType>
+        <EntityType Name="REFPOSTEDSPEED">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="numeric" Nullable="false" Precision="5" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="50" />
+          <Property Name="SORTORDER" Type="numeric" Precision="5" />
+        </EntityType>
+        <EntityType Name="REFRECORDTYPE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="numeric" Nullable="false" Precision="38" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="50" />
+          <Property Name="SORTORDER" Type="numeric" Precision="5" />
+        </EntityType>
+        <EntityType Name="REFREPORTINGAGENCY">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="varchar" Nullable="false" MaxLength="9" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="50" />
+          <Property Name="SORTORDER" Type="numeric" Precision="5" />
+          <Property Name="XREFCITYCODE" Type="varchar" MaxLength="4" />
+          <Property Name="AGENCYEMAILADDRESS" Type="varchar" MaxLength="40" />
+        </EntityType>
+        <EntityType Name="REFRESTRAINT">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="numeric" Nullable="false" Precision="5" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="50" />
+          <Property Name="SORTORDER" Type="numeric" Precision="5" />
+        </EntityType>
+        <EntityType Name="REFROADALIGN">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="numeric" Nullable="false" Precision="5" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="25" />
+          <Property Name="SORTORDER" Type="numeric" Precision="5" />
+        </EntityType>
+        <EntityType Name="REFROADCHARACTERISTICS">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="numeric" Nullable="false" Precision="5" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="40" />
+          <Property Name="SORTORDER" Type="numeric" Precision="5" />
+        </EntityType>
+        <EntityType Name="REFROADCONDITIONS">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="numeric" Nullable="false" Precision="5" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="60" />
+          <Property Name="SORTORDER" Type="numeric" Precision="5" />
+        </EntityType>
+        <EntityType Name="REFROADDESIGN">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="numeric" Nullable="false" Precision="5" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="25" />
+          <Property Name="SORTORDER" Type="numeric" Precision="5" />
+        </EntityType>
+        <EntityType Name="REFROADGROUPS">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="numeric" Nullable="false" Precision="5" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="100" />
+          <Property Name="CLASSIFICATION" Type="numeric" Precision="5" />
+          <Property Name="SORTORDER" Type="varchar" MaxLength="3" />
+          <Property Name="SHORTNAME" Type="varchar" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="REFROADTYPE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="numeric" Nullable="false" Precision="5" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="25" />
+          <Property Name="SORTORDER" Type="numeric" Precision="5" />
+        </EntityType>
+        <EntityType Name="REFROUTECODES">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="varchar" Nullable="false" MaxLength="5" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="80" />
+          <Property Name="ROUTEORDER" Type="numeric" Precision="5" />
+          <Property Name="ROADGROUP" Type="numeric" Precision="5" />
+          <Property Name="LRSROUTEID" Type="varchar" MaxLength="5" />
+          <Property Name="MRD" Type="varchar" MaxLength="80" />
+        </EntityType>
+        <EntityType Name="REFROUTECODESBK">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="varchar" Nullable="false" MaxLength="5" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="80" />
+          <Property Name="ROUTEORDER" Type="numeric" Precision="5" />
+          <Property Name="ROADGROUP" Type="numeric" Precision="5" />
+          <Property Name="LRSROUTEID" Type="varchar" MaxLength="5" />
+          <Property Name="MRD" Type="varchar" MaxLength="80" />
+        </EntityType>
+        <EntityType Name="REFSCHOOLBUSRELATEDARS">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="varchar" Nullable="false" MaxLength="1" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="50" />
+          <Property Name="STATECODE" Type="numeric" Nullable="false" Precision="1" />
+        </EntityType>
+        <EntityType Name="REFSEATLOCATION">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="numeric" Nullable="false" Precision="5" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="60" />
+          <Property Name="SORTORDER" Type="numeric" Precision="5" />
+        </EntityType>
+        <EntityType Name="REFSEQUENCEOFEVENTS">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="numeric" Nullable="false" Precision="5" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="53" />
+          <Property Name="SORTORDER" Type="numeric" Precision="5" />
+        </EntityType>
+        <EntityType Name="REFSEX">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="varchar" Nullable="false" MaxLength="1" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="20" />
+          <Property Name="SORTORDER" Type="numeric" Precision="5" />
+        </EntityType>
+        <EntityType Name="REFSHOULDER">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="numeric" Nullable="false" Precision="38" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="100" />
+          <Property Name="SORTORDER" Type="numeric" Precision="5" />
+        </EntityType>
+        <EntityType Name="REFSOURCEOFCARRIERNAME">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="numeric" Nullable="false" Precision="5" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="20" />
+          <Property Name="SORTORDER" Type="numeric" Precision="5" />
+        </EntityType>
+        <EntityType Name="REFSPECIALSYSTEMS">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="numeric" Nullable="false" Precision="38" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="50" />
+          <Property Name="SORTORDER" Type="numeric" Precision="5" />
+        </EntityType>
+        <EntityType Name="REFSTATE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="varchar" Nullable="false" MaxLength="3" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="25" />
+          <Property Name="SORTORDER" Type="numeric" Precision="5" />
+        </EntityType>
+        <EntityType Name="REFSTATECLASS">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="numeric" Nullable="false" Precision="38" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="50" />
+          <Property Name="SORTORDER" Type="numeric" Precision="5" />
+        </EntityType>
+        <EntityType Name="REFSTDTABLESAMS">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="numeric" Nullable="false" Precision="38" />
+          <Property Name="TABLENAME" Type="varchar" MaxLength="50" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="REFSTDTABLESCRS">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="numeric" Nullable="false" Precision="38" />
+          <Property Name="TABLENAME" Type="varchar" MaxLength="50" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="REFSTREETS">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="numeric" Nullable="false" Precision="38" />
+          <Property Name="CITYCODE" Type="varchar" MaxLength="3" />
+          <Property Name="STREET1" Type="varchar" MaxLength="50" />
+          <Property Name="STREET2" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="REFSURFACECONDITION">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="numeric" Nullable="false" Precision="5" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="30" />
+          <Property Name="SORTORDER" Type="numeric" Precision="5" />
+        </EntityType>
+        <EntityType Name="REFTA1FUNCGRPS">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="numeric" Nullable="false" Precision="38" />
+          <Property Name="DESCRIPTION" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="SORTORDER" Type="numeric" Precision="5" />
+        </EntityType>
+        <EntityType Name="REFTA1RELATEDDATA">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="numeric" Nullable="false" Precision="38" />
+          <Property Name="THOUSANDSOFREGVEHICLES" Type="float" />
+          <Property Name="ANNUALMILESPERVEHICLE" Type="float" />
+          <Property Name="MOTORFUELGALLONSMILLIONS" Type="float" />
+          <Property Name="POPULATIONINTHOUSANDS" Type="float" />
+          <Property Name="LICDRIVERSINTHOUSANDS" Type="float" />
+          <Property Name="YEAROFDATAUSED" Type="numeric" Precision="38" />
+          <Property Name="NONFEDLOCALRURAL" Type="float" />
+          <Property Name="NONFEDERALLOCALURBAN" Type="float" />
+          <Property Name="NONFEDCOLLECTORRURAL" Type="float" />
+        </EntityType>
+        <EntityType Name="REFTOLLFACILITY">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="numeric" Nullable="false" Precision="38" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="50" />
+          <Property Name="SORTORDER" Type="numeric" Precision="5" />
+        </EntityType>
+        <EntityType Name="REFTOWNCODE">
+          <Key>
+            <PropertyRef Name="TOWNCODE" />
+            <PropertyRef Name="COUNTYCODE" />
+          </Key>
+          <Property Name="TOWNCODE" Type="varchar" Nullable="false" MaxLength="4" />
+          <Property Name="COUNTYCODE" Type="numeric" Nullable="false" Precision="5" />
+          <Property Name="DESCRIPTION" Type="varchar" Nullable="false" MaxLength="25" />
+          <Property Name="SORTORDER" Type="numeric" Precision="5" />
+        </EntityType>
+        <EntityType Name="REFTRAFFICSIGNALS">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="numeric" Nullable="false" Precision="5" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="50" />
+          <Property Name="SORTORDER" Type="numeric" Precision="5" />
+        </EntityType>
+        <EntityType Name="REFTRANSACTIONCODE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="numeric" Nullable="false" Precision="38" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="90" />
+          <Property Name="SORTORDER" Type="numeric" Precision="5" />
+        </EntityType>
+        <EntityType Name="REFTRAVELRTCAT">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="numeric" Nullable="false" Precision="38" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="60" />
+          <Property Name="SORTORDER" Type="numeric" Precision="5" />
+        </EntityType>
+        <EntityType Name="REFTRAVELRTID">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="varchar" Nullable="false" MaxLength="5" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="80" />
+          <Property Name="SORTORDER" Type="numeric" Precision="5" />
+        </EntityType>
+        <EntityType Name="REFUNITTYPE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="numeric" Nullable="false" Precision="5" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="55" />
+          <Property Name="NONMOTORVEHICLE" Type="numeric" Nullable="false" Precision="1" />
+          <Property Name="COMMERCIAL" Type="numeric" Nullable="false" Precision="1" />
+          <Property Name="PERSONTYPEEQUIVELENT" Type="numeric" Precision="5" />
+          <Property Name="COLLISIONNAME" Type="varchar" MaxLength="10" />
+          <Property Name="SORTORDER" Type="numeric" Precision="5" />
+          <Property Name="SHAPEID" Type="numeric" Precision="5" />
+        </EntityType>
+        <EntityType Name="REFVEHCOLLIDEDWITH">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="numeric" Nullable="false" Precision="5" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="40" />
+          <Property Name="SORTORDER" Type="numeric" Precision="5" />
+        </EntityType>
+        <EntityType Name="REFVEHCONFIGURATION">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="numeric" Nullable="false" Precision="5" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="50" />
+          <Property Name="SORTORDER" Type="numeric" Precision="5" />
+        </EntityType>
+        <EntityType Name="REFVEHDAMAGECODE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="numeric" Nullable="false" Precision="5" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="50" />
+          <Property Name="SORTORDER" Type="numeric" Precision="5" />
+        </EntityType>
+        <EntityType Name="REFVEHDAMAGEEST">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="numeric" Nullable="false" Precision="5" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="50" />
+          <Property Name="SORTORDER" Type="numeric" Precision="5" />
+        </EntityType>
+        <EntityType Name="REFVEHMAKE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="numeric" Nullable="false" Precision="5" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="50" />
+          <Property Name="SORTORDER" Type="numeric" Precision="5" />
+        </EntityType>
+        <EntityType Name="REFVIOLATIONS">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="varchar" Nullable="false" MaxLength="5" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="250" />
+          <Property Name="SORTORDER" Type="numeric" Precision="5" />
+        </EntityType>
+        <EntityType Name="REFWEATHERCONDITIONS">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="numeric" Nullable="false" Precision="5" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="40" />
+          <Property Name="SORTORDER" Type="numeric" Precision="5" />
+        </EntityType>
+        <EntityType Name="REFWEIGHTUNITS">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="numeric" Nullable="false" Precision="5" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="25" />
+          <Property Name="SORTORDER" Type="numeric" Precision="5" />
+        </EntityType>
+        <Association Name="REFTA1FUNCGRPSREFFUNCTCLASS">
+          <End Role="REFTA1FUNCGRPS" Type="VCSGModel1.Store.REFTA1FUNCGRPS" Multiplicity="0..1" />
+          <End Role="REFFUNCTCLASS" Type="VCSGModel1.Store.REFFUNCTCLASS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="REFTA1FUNCGRPS">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="REFFUNCTCLASS">
+              <PropertyRef Name="FAUAREAID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <!--Errors Found During Generation:
+      warning 6013: The table/view 'VCSG.dbo.REFHALRELATEDDATA' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+      
+      <EntityType Name="REFHALRELATEDDATA">
+        <Property Name="FATALITYCOST" Type="numeric" Precision="10" Scale="2" />
+        <Property Name="INJURYCOST" Type="numeric" Precision="10" Scale="2" />
+        <Property Name="CONSTANTPROB" Type="numeric" Precision="10" Scale="4" />
+        <Property Name="PDOCOST" Type="numeric" Precision="10" Scale="2" />
+        <Property Name="STARTYEAR" Type="numeric" Precision="10" Scale="2" />
+        <Property Name="MINRATIO" Type="numeric" Precision="10" Scale="4" />
+        <Property Name="MAXRATIO" Type="numeric" Precision="10" Scale="4" />
+        <Property Name="MINCRASHES" Type="numeric" Precision="10" />
+        <Property Name="ENDYEAR" Type="numeric" Precision="10" Scale="2" />
+        <Property Name="DONTEXCLUDEARCR" Type="numeric" Precision="1" />
+      </EntityType>-->
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="VCSGModel1" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="ReferenceEntities" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="REFACCESSCONTROLs" EntityType="VCSGModel1.REFACCESSCONTROL" />
+          <EntitySet Name="REFADMINCLASSes" EntityType="VCSGModel1.REFADMINCLASS" />
+          <EntitySet Name="REFALCOHOLTESTs" EntityType="VCSGModel1.REFALCOHOLTEST" />
+          <EntitySet Name="REFAPPARANTOPCONDs" EntityType="VCSGModel1.REFAPPARANTOPCOND" />
+          <EntitySet Name="REFCARGOBODYTYPEs" EntityType="VCSGModel1.REFCARGOBODYTYPE" />
+          <EntitySet Name="REFCENSUSCATEGORies" EntityType="VCSGModel1.REFCENSUSCATEGORY" />
+          <EntitySet Name="REFCITYCODEs" EntityType="VCSGModel1.REFCITYCODE" />
+          <EntitySet Name="REFCLASS1TOWNHIGHWAYS" EntityType="VCSGModel1.REFCLASS1TOWNHIGHWAYS" />
+          <EntitySet Name="REFCLOSEYEARs" EntityType="VCSGModel1.REFCLOSEYEAR" />
+          <EntitySet Name="REFCONTRIBCIRCUMSTANCES" EntityType="VCSGModel1.REFCONTRIBCIRCUMSTANCE" />
+          <EntitySet Name="REFCOUNTYCODEs" EntityType="VCSGModel1.REFCOUNTYCODE" />
+          <EntitySet Name="REFCRASHTYPEs" EntityType="VCSGModel1.REFCRASHTYPE" />
+          <EntitySet Name="REFDEFECTIVEEQUIPMENTs" EntityType="VCSGModel1.REFDEFECTIVEEQUIPMENT" />
+          <EntitySet Name="REFDIRECTIONs" EntityType="VCSGModel1.REFDIRECTION" />
+          <EntitySet Name="REFDIROFCOLLISIONs" EntityType="VCSGModel1.REFDIROFCOLLISION" />
+          <EntitySet Name="REFDISTANCETYPEs" EntityType="VCSGModel1.REFDISTANCETYPE" />
+          <EntitySet Name="REFDOMAINNAMEs" EntityType="VCSGModel1.REFDOMAINNAME" />
+          <EntitySet Name="REFDRUGTESTs" EntityType="VCSGModel1.REFDRUGTEST" />
+          <EntitySet Name="REFDRUGTESTRESULTs" EntityType="VCSGModel1.REFDRUGTESTRESULT" />
+          <EntitySet Name="REFEJECTEDs" EntityType="VCSGModel1.REFEJECTED" />
+          <EntitySet Name="REFEMSAGENCIES" EntityType="VCSGModel1.REFEMSAGENCy" />
+          <EntitySet Name="REFEQUIPMENTARS" EntityType="VCSGModel1.REFEQUIPMENTAR" />
+          <EntitySet Name="REFFASYSDESIGNWAYs" EntityType="VCSGModel1.REFFASYSDESIGNWAY" />
+          <EntitySet Name="REFFASYSTRAVELWAYs" EntityType="VCSGModel1.REFFASYSTRAVELWAY" />
+          <EntitySet Name="REFFAUAREAs" EntityType="VCSGModel1.REFFAUAREA" />
+          <EntitySet Name="REFFIVEYRIMPROVEMENTS" EntityType="VCSGModel1.REFFIVEYRIMPROVEMENT" />
+          <EntitySet Name="REFFUNCTCLASSes" EntityType="VCSGModel1.REFFUNCTCLASS" />
+          <EntitySet Name="REFGOVLEVOFCTRs" EntityType="VCSGModel1.REFGOVLEVOFCTR" />
+          <EntitySet Name="RefGVWROrGCWRs" EntityType="VCSGModel1.RefGVWROrGCWR" />
+          <EntitySet Name="REFHIGHWAYDISTRICTs" EntityType="VCSGModel1.REFHIGHWAYDISTRICT" />
+          <EntitySet Name="REFHOSPITALS" EntityType="VCSGModel1.REFHOSPITAL" />
+          <EntitySet Name="RefImageTypes" EntityType="VCSGModel1.RefImageType" />
+          <EntitySet Name="REFINJURies" EntityType="VCSGModel1.REFINJURY" />
+          <EntitySet Name="REFINSURANCECOes" EntityType="VCSGModel1.REFINSURANCECO" />
+          <EntitySet Name="REFINTERSTATEROUTES" EntityType="VCSGModel1.REFINTERSTATEROUTE" />
+          <EntitySet Name="REFINVENRTNUMs" EntityType="VCSGModel1.REFINVENRTNUM" />
+          <EntitySet Name="REFLENGTHUNITS" EntityType="VCSGModel1.REFLENGTHUNIT" />
+          <EntitySet Name="REFLICENSECLASSes" EntityType="VCSGModel1.REFLICENSECLASS" />
+          <EntitySet Name="REFLICRESTRICTPERMISSes" EntityType="VCSGModel1.REFLICRESTRICTPERMISS" />
+          <EntitySet Name="REFLIGHTs" EntityType="VCSGModel1.REFLIGHT" />
+          <EntitySet Name="REFLRSROUTEMILEAGEs" EntityType="VCSGModel1.REFLRSROUTEMILEAGE" />
+          <EntitySet Name="REFLRSROUTENUMBERS" EntityType="VCSGModel1.REFLRSROUTENUMBER" />
+          <EntitySet Name="REFMEDIANTYPEs" EntityType="VCSGModel1.REFMEDIANTYPE" />
+          <EntitySet Name="REFMILEPTINDs" EntityType="VCSGModel1.REFMILEPTIND" />
+          <EntitySet Name="REFMUNICIPALITies" EntityType="VCSGModel1.REFMUNICIPALITY" />
+          <EntitySet Name="REFPARKWAYTRUCKS" EntityType="VCSGModel1.REFPARKWAYTRUCK" />
+          <EntitySet Name="REFPAVEMENTTYPEs" EntityType="VCSGModel1.REFPAVEMENTTYPE" />
+          <EntitySet Name="REFPEDESTRIANCYCLEACTIONs" EntityType="VCSGModel1.REFPEDESTRIANCYCLEACTION" />
+          <EntitySet Name="REFPEDESTRIANCYCLELOCATIONs" EntityType="VCSGModel1.REFPEDESTRIANCYCLELOCATION" />
+          <EntitySet Name="RefPerceivedRaces" EntityType="VCSGModel1.RefPerceivedRace" />
+          <EntitySet Name="REFPERSONTYPEs" EntityType="VCSGModel1.REFPERSONTYPE" />
+          <EntitySet Name="REFPLATETYPEs" EntityType="VCSGModel1.REFPLATETYPE" />
+          <EntitySet Name="REFPOPSIZEGRPs" EntityType="VCSGModel1.REFPOPSIZEGRP" />
+          <EntitySet Name="REFPOSTEDSPEEDs" EntityType="VCSGModel1.REFPOSTEDSPEED" />
+          <EntitySet Name="REFRECORDTYPEs" EntityType="VCSGModel1.REFRECORDTYPE" />
+          <EntitySet Name="REFREPORTINGAGENCies" EntityType="VCSGModel1.REFREPORTINGAGENCY" />
+          <EntitySet Name="REFRESTRAINTs" EntityType="VCSGModel1.REFRESTRAINT" />
+          <EntitySet Name="REFROADALIGNs" EntityType="VCSGModel1.REFROADALIGN" />
+          <EntitySet Name="REFROADCHARACTERISTICS" EntityType="VCSGModel1.REFROADCHARACTERISTIC" />
+          <EntitySet Name="REFROADCONDITIONS" EntityType="VCSGModel1.REFROADCONDITION" />
+          <EntitySet Name="REFROADDESIGNs" EntityType="VCSGModel1.REFROADDESIGN" />
+          <EntitySet Name="REFROADGROUPS" EntityType="VCSGModel1.REFROADGROUP" />
+          <EntitySet Name="REFROADTYPEs" EntityType="VCSGModel1.REFROADTYPE" />
+          <EntitySet Name="REFROUTECODES" EntityType="VCSGModel1.REFROUTECODE" />
+          <EntitySet Name="REFROUTECODESBKs" EntityType="VCSGModel1.REFROUTECODESBK" />
+          <EntitySet Name="REFSCHOOLBUSRELATEDARS" EntityType="VCSGModel1.REFSCHOOLBUSRELATEDAR" />
+          <EntitySet Name="REFSEATLOCATIONs" EntityType="VCSGModel1.REFSEATLOCATION" />
+          <EntitySet Name="REFSEQUENCEOFEVENTS" EntityType="VCSGModel1.REFSEQUENCEOFEVENT" />
+          <EntitySet Name="REFSEXes" EntityType="VCSGModel1.REFSEX" />
+          <EntitySet Name="REFSHOULDERs" EntityType="VCSGModel1.REFSHOULDER" />
+          <EntitySet Name="REFSOURCEOFCARRIERNAMEs" EntityType="VCSGModel1.REFSOURCEOFCARRIERNAME" />
+          <EntitySet Name="REFSPECIALSYSTEMS" EntityType="VCSGModel1.REFSPECIALSYSTEM" />
+          <EntitySet Name="REFSTATEs" EntityType="VCSGModel1.REFSTATE" />
+          <EntitySet Name="REFSTATECLASSes" EntityType="VCSGModel1.REFSTATECLASS" />
+          <EntitySet Name="REFSTDTABLESAMS" EntityType="VCSGModel1.REFSTDTABLESAM" />
+          <EntitySet Name="REFSTDTABLESCRS" EntityType="VCSGModel1.REFSTDTABLESCR" />
+          <EntitySet Name="REFSTREETS" EntityType="VCSGModel1.REFSTREET" />
+          <EntitySet Name="REFSURFACECONDITIONs" EntityType="VCSGModel1.REFSURFACECONDITION" />
+          <EntitySet Name="REFTA1FUNCGRPS" EntityType="VCSGModel1.REFTA1FUNCGRPS" />
+          <EntitySet Name="REFTA1RELATEDDATA" EntityType="VCSGModel1.REFTA1RELATEDDATA" />
+          <EntitySet Name="REFTOLLFACILITies" EntityType="VCSGModel1.REFTOLLFACILITY" />
+          <EntitySet Name="REFTOWNCODEs" EntityType="VCSGModel1.REFTOWNCODE" />
+          <EntitySet Name="REFTRAFFICSIGNALS" EntityType="VCSGModel1.REFTRAFFICSIGNAL" />
+          <EntitySet Name="REFTRANSACTIONCODEs" EntityType="VCSGModel1.REFTRANSACTIONCODE" />
+          <EntitySet Name="REFTRAVELRTCATs" EntityType="VCSGModel1.REFTRAVELRTCAT" />
+          <EntitySet Name="REFTRAVELRTIDs" EntityType="VCSGModel1.REFTRAVELRTID" />
+          <EntitySet Name="REFUNITTYPEs" EntityType="VCSGModel1.REFUNITTYPE" />
+          <EntitySet Name="REFVEHCOLLIDEDWITHs" EntityType="VCSGModel1.REFVEHCOLLIDEDWITH" />
+          <EntitySet Name="REFVEHCONFIGURATIONs" EntityType="VCSGModel1.REFVEHCONFIGURATION" />
+          <EntitySet Name="REFVEHDAMAGECODEs" EntityType="VCSGModel1.REFVEHDAMAGECODE" />
+          <EntitySet Name="REFVEHDAMAGEESTs" EntityType="VCSGModel1.REFVEHDAMAGEEST" />
+          <EntitySet Name="REFVEHMAKEs" EntityType="VCSGModel1.REFVEHMAKE" />
+          <EntitySet Name="REFVIOLATIONS" EntityType="VCSGModel1.REFVIOLATION" />
+          <EntitySet Name="REFWEATHERCONDITIONS" EntityType="VCSGModel1.REFWEATHERCONDITION" />
+          <EntitySet Name="REFWEIGHTUNITS" EntityType="VCSGModel1.REFWEIGHTUNIT" />
+          <AssociationSet Name="REFTA1FUNCGRPSREFFUNCTCLASS" Association="VCSGModel1.REFTA1FUNCGRPSREFFUNCTCLASS">
+            <End Role="REFTA1FUNCGRPS" EntitySet="REFTA1FUNCGRPS" />
+            <End Role="REFFUNCTCLASS" EntitySet="REFFUNCTCLASSes" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="REFACCESSCONTROL">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="SORTORDER" Type="Decimal" Precision="5" Scale="0" />
+        </EntityType>
+        <EntityType Name="REFADMINCLASS">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="SORTORDER" Type="Decimal" Precision="5" Scale="0" />
+        </EntityType>
+        <EntityType Name="REFALCOHOLTEST">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Nullable="false" Precision="5" Scale="0" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="35" Unicode="false" FixedLength="false" />
+          <Property Name="SORTORDER" Type="Decimal" Precision="5" Scale="0" />
+        </EntityType>
+        <EntityType Name="REFAPPARANTOPCOND">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Nullable="false" Precision="5" Scale="0" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="SORTORDER" Type="Decimal" Precision="5" Scale="0" />
+        </EntityType>
+        <EntityType Name="REFCARGOBODYTYPE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Nullable="false" Precision="5" Scale="0" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="SORTORDER" Type="Decimal" Precision="5" Scale="0" />
+        </EntityType>
+        <EntityType Name="REFCENSUSCATEGORY">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="SORTORDER" Type="Decimal" Precision="5" Scale="0" />
+        </EntityType>
+        <EntityType Name="REFCITYCODE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="String" Nullable="false" MaxLength="4" Unicode="false" FixedLength="false" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+          <Property Name="ZIPCODE" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+          <Property Name="COUNTYCODE" Type="String" MaxLength="2" Unicode="false" FixedLength="false" />
+          <Property Name="SORTORDER" Type="Decimal" Precision="5" Scale="0" />
+        </EntityType>
+        <EntityType Name="REFCLASS1TOWNHIGHWAYS">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+          <Property Name="ROUTECODE" Type="String" MaxLength="5" Unicode="false" FixedLength="false" />
+          <Property Name="ROUTENAME" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+          <Property Name="CITYCODE" Type="String" MaxLength="5" Unicode="false" FixedLength="false" />
+          <Property Name="CITYNAME" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+          <Property Name="BEGINMILEPOINT" Type="Decimal" Precision="10" Scale="2" />
+          <Property Name="ENDMILEPOINT" Type="Decimal" Precision="10" Scale="2" />
+          <Property Name="SORTORDER" Type="Decimal" Precision="5" Scale="0" />
+        </EntityType>
+        <EntityType Name="REFCLOSEYEAR">
+          <Key>
+            <PropertyRef Name="CYEAR" />
+          </Key>
+          <Property Name="CYEAR" Type="Decimal" Nullable="false" Precision="4" Scale="0" />
+        </EntityType>
+        <EntityType Name="REFCONTRIBCIRCUMSTANCE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Nullable="false" Precision="5" Scale="0" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="SORTORDER" Type="Decimal" Precision="5" Scale="0" />
+        </EntityType>
+        <EntityType Name="REFCOUNTYCODE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="String" Nullable="false" MaxLength="2" Unicode="false" FixedLength="false" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="SORTORDER" Type="Decimal" Precision="5" Scale="0" />
+        </EntityType>
+        <EntityType Name="REFCRASHTYPE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Nullable="false" Precision="5" Scale="0" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="SORTORDER" Type="Decimal" Precision="5" Scale="0" />
+        </EntityType>
+        <EntityType Name="REFDEFECTIVEEQUIPMENT">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Nullable="false" Precision="5" Scale="0" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+          <Property Name="SORTORDER" Type="Decimal" Precision="5" Scale="0" />
+        </EntityType>
+        <EntityType Name="REFDIRECTION">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="false" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+          <Property Name="SORTORDER" Type="Decimal" Precision="5" Scale="0" />
+        </EntityType>
+        <EntityType Name="REFDIROFCOLLISION">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Nullable="false" Precision="5" Scale="0" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="SORTORDER" Type="Decimal" Precision="5" Scale="0" />
+        </EntityType>
+        <EntityType Name="REFDISTANCETYPE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Nullable="false" Precision="5" Scale="0" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="SORTORDER" Type="Decimal" Precision="5" Scale="0" />
+        </EntityType>
+        <EntityType Name="REFDOMAINNAME">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="SORTORDER" Type="Decimal" Precision="5" Scale="0" />
+        </EntityType>
+        <EntityType Name="REFDRUGTEST">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Nullable="false" Precision="5" Scale="0" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="35" Unicode="false" FixedLength="false" />
+          <Property Name="SORTORDER" Type="Decimal" Precision="5" Scale="0" />
+        </EntityType>
+        <EntityType Name="REFDRUGTESTRESULT">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Nullable="false" Precision="5" Scale="0" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="35" Unicode="false" FixedLength="false" />
+          <Property Name="SORTORDER" Type="Decimal" Precision="5" Scale="0" />
+        </EntityType>
+        <EntityType Name="REFEJECTED">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Nullable="false" Precision="5" Scale="0" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="35" Unicode="false" FixedLength="false" />
+          <Property Name="SORTORDER" Type="Decimal" Precision="5" Scale="0" />
+        </EntityType>
+        <EntityType Name="REFEMSAGENCy">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="String" Nullable="false" MaxLength="3" Unicode="false" FixedLength="false" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="SORTORDER" Type="Decimal" Precision="5" Scale="0" />
+        </EntityType>
+        <EntityType Name="REFEQUIPMENTAR">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="false" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="STATECODE" Type="Decimal" Nullable="false" Precision="1" Scale="0" />
+        </EntityType>
+        <EntityType Name="REFFASYSDESIGNWAY">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="FAFLAG" Type="Decimal" Nullable="false" Precision="1" Scale="0" />
+          <Property Name="SORTORDER" Type="Decimal" Precision="5" Scale="0" />
+        </EntityType>
+        <EntityType Name="REFFASYSTRAVELWAY">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="SORTORDER" Type="Decimal" Precision="5" Scale="0" />
+        </EntityType>
+        <EntityType Name="REFFAUAREA">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="SORTORDER" Type="Decimal" Precision="5" Scale="0" />
+        </EntityType>
+        <EntityType Name="REFFIVEYRIMPROVEMENT">
+          <Key>
+            <PropertyRef Name="ROUTECODE" />
+            <PropertyRef Name="CITYCODE" />
+          </Key>
+          <Property Name="ROUTECODE" Type="String" Nullable="false" MaxLength="5" Unicode="false" FixedLength="false" />
+          <Property Name="ROUTENAME" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+          <Property Name="CITYCODE" Type="String" Nullable="false" MaxLength="5" Unicode="false" FixedLength="false" />
+          <Property Name="BEGINMILEPOINT" Type="Double" />
+          <Property Name="ENDMILEPOINT" Type="Double" />
+        </EntityType>
+        <EntityType Name="REFFUNCTCLASS">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="80" Unicode="false" FixedLength="false" />
+          <Property Name="FAUAREAID" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="URBANFLAG" Type="Decimal" Nullable="false" Precision="1" Scale="0" />
+          <Property Name="ABREVIATEDNAME" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="SORTORDER" Type="Decimal" Precision="5" Scale="0" />
+          <NavigationProperty Name="REFTA1FUNCGRPS" Relationship="VCSGModel1.REFTA1FUNCGRPSREFFUNCTCLASS" FromRole="REFFUNCTCLASS" ToRole="REFTA1FUNCGRPS" />
+        </EntityType>
+        <EntityType Name="REFGOVLEVOFCTR">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="85" Unicode="false" FixedLength="false" />
+          <Property Name="SORTORDER" Type="Decimal" Precision="5" Scale="0" />
+        </EntityType>
+        <EntityType Name="RefGVWROrGCWR">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int16" Nullable="false" />
+          <Property Name="Description" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="SortOrder" Type="Int16" />
+          <Property Name="NoDisplay" Type="Boolean" />
+          <Property Name="SafetyNetRef" Type="Int16" />
+        </EntityType>
+        <EntityType Name="REFHIGHWAYDISTRICT">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="String" Nullable="false" MaxLength="2" Unicode="false" FixedLength="false" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="SORTORDER" Type="Decimal" Precision="5" Scale="0" />
+        </EntityType>
+        <EntityType Name="REFHOSPITAL">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="String" Nullable="false" MaxLength="3" Unicode="false" FixedLength="false" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="SORTORDER" Type="Decimal" Precision="5" Scale="0" />
+        </EntityType>
+        <EntityType Name="RefImageType">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int16" Nullable="false" />
+          <Property Name="Description" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="NoDisplay" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="REFINJURY">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Nullable="false" Precision="5" Scale="0" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+          <Property Name="SORTORDER" Type="Decimal" Precision="5" Scale="0" />
+          <Property Name="SEVERITYLEVEL" Type="Decimal" Precision="5" Scale="0" />
+        </EntityType>
+        <EntityType Name="REFINSURANCECO">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Nullable="false" Precision="5" Scale="0" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+          <Property Name="SORTORDER" Type="Decimal" Precision="5" Scale="0" />
+        </EntityType>
+        <EntityType Name="REFINTERSTATEROUTE">
+          <Key>
+            <PropertyRef Name="INTERSTATEROUTE" />
+          </Key>
+          <Property Name="INTERSTATEROUTE" Type="String" Nullable="false" MaxLength="4" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="REFINVENRTNUM">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="SORTORDER" Type="Decimal" Precision="5" Scale="0" />
+        </EntityType>
+        <EntityType Name="REFLENGTHUNIT">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Nullable="false" Precision="5" Scale="0" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="SORTORDER" Type="Decimal" Precision="5" Scale="0" />
+        </EntityType>
+        <EntityType Name="REFLICENSECLASS">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="String" Nullable="false" MaxLength="2" Unicode="false" FixedLength="false" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="SORTORDER" Type="Decimal" Precision="5" Scale="0" />
+        </EntityType>
+        <EntityType Name="REFLICRESTRICTPERMISS">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="String" Nullable="false" MaxLength="2" Unicode="false" FixedLength="false" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="STATECODE" Type="Decimal" Nullable="false" Precision="1" Scale="0" />
+          <Property Name="SORTORDER" Type="Decimal" Precision="5" Scale="0" />
+        </EntityType>
+        <EntityType Name="REFLIGHT">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Nullable="false" Precision="5" Scale="0" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="35" Unicode="false" FixedLength="false" />
+          <Property Name="SORTORDER" Type="Decimal" Precision="5" Scale="0" />
+        </EntityType>
+        <EntityType Name="REFLRSROUTEMILEAGE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+          <Property Name="ROUTENUMBER" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="COUNTYTOWNCODE" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="TOWN" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="BEGINNING_MILEAGE" Type="Double" />
+          <Property Name="ENDINGMILEAGE" Type="Double" />
+          <Property Name="ACCUMMILEAGE" Type="Double" />
+          <Property Name="DIRECTION" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+          <Property Name="PRINTUNKNOWNS" Type="Decimal" Nullable="false" Precision="1" Scale="0" />
+          <Property Name="EFFECTIVEDATE" Type="DateTime" Precision="3" />
+          <Property Name="ABEGINNING_MILEAGE" Type="Double" />
+          <Property Name="AENDING_MILEAGE" Type="Double" />
+          <Property Name="AACCUMMILEAGE" Type="Double" />
+        </EntityType>
+        <EntityType Name="REFLRSROUTENUMBER">
+          <Key>
+            <PropertyRef Name="IDKEY" />
+          </Key>
+          <Property Name="IDKEY" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+          <Property Name="ID" Type="String" MaxLength="5" Unicode="false" FixedLength="false" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="ROUTENUMBERID" Type="String" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="DIRECTION" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="REFMEDIANTYPE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="70" Unicode="false" FixedLength="false" />
+          <Property Name="SORTORDER" Type="Decimal" Precision="5" Scale="0" />
+        </EntityType>
+        <EntityType Name="REFMILEPTIND">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="SORTORDER" Type="Decimal" Precision="5" Scale="0" />
+        </EntityType>
+        <EntityType Name="REFMUNICIPALITY">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="SORTORDER" Type="Decimal" Precision="5" Scale="0" />
+        </EntityType>
+        <EntityType Name="REFPARKWAYTRUCK">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="SORTORDER" Type="Decimal" Precision="5" Scale="0" />
+        </EntityType>
+        <EntityType Name="REFPAVEMENTTYPE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="SORTORDER" Type="Decimal" Precision="5" Scale="0" />
+        </EntityType>
+        <EntityType Name="REFPEDESTRIANCYCLEACTION">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Nullable="false" Precision="5" Scale="0" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="SORTORDER" Type="Decimal" Precision="5" Scale="0" />
+        </EntityType>
+        <EntityType Name="REFPEDESTRIANCYCLELOCATION">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Nullable="false" Precision="5" Scale="0" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="80" Unicode="false" FixedLength="false" />
+          <Property Name="SORTORDER" Type="Decimal" Precision="5" Scale="0" />
+        </EntityType>
+        <EntityType Name="RefPerceivedRace">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int16" Nullable="false" />
+          <Property Name="Description" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="SortOrder" Type="Int16" />
+          <Property Name="NoDisplay" Type="Boolean" />
+          <Property Name="SpillmanRef" Type="String" MaxLength="5" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="REFPERSONTYPE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Nullable="false" Precision="5" Scale="0" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="SORTORDER" Type="Decimal" Precision="5" Scale="0" />
+          <Property Name="VEHTYPEID" Type="Decimal" Precision="5" Scale="0" />
+        </EntityType>
+        <EntityType Name="REFPLATETYPE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="String" Nullable="false" MaxLength="2" Unicode="false" FixedLength="false" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="SORTORDER" Type="Decimal" Precision="5" Scale="0" />
+        </EntityType>
+        <EntityType Name="REFPOPSIZEGRP">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="SORTORDER" Type="Decimal" Precision="5" Scale="0" />
+        </EntityType>
+        <EntityType Name="REFPOSTEDSPEED">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Nullable="false" Precision="5" Scale="0" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="SORTORDER" Type="Decimal" Precision="5" Scale="0" />
+        </EntityType>
+        <EntityType Name="REFRECORDTYPE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="SORTORDER" Type="Decimal" Precision="5" Scale="0" />
+        </EntityType>
+        <EntityType Name="REFREPORTINGAGENCY">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="String" Nullable="false" MaxLength="9" Unicode="false" FixedLength="false" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="SORTORDER" Type="Decimal" Precision="5" Scale="0" />
+          <Property Name="XREFCITYCODE" Type="String" MaxLength="4" Unicode="false" FixedLength="false" />
+          <Property Name="AGENCYEMAILADDRESS" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="REFRESTRAINT">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Nullable="false" Precision="5" Scale="0" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="SORTORDER" Type="Decimal" Precision="5" Scale="0" />
+        </EntityType>
+        <EntityType Name="REFROADALIGN">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Nullable="false" Precision="5" Scale="0" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="SORTORDER" Type="Decimal" Precision="5" Scale="0" />
+        </EntityType>
+        <EntityType Name="REFROADCHARACTERISTIC">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Nullable="false" Precision="5" Scale="0" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+          <Property Name="SORTORDER" Type="Decimal" Precision="5" Scale="0" />
+        </EntityType>
+        <EntityType Name="REFROADCONDITION">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Nullable="false" Precision="5" Scale="0" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="SORTORDER" Type="Decimal" Precision="5" Scale="0" />
+        </EntityType>
+        <EntityType Name="REFROADDESIGN">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Nullable="false" Precision="5" Scale="0" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="SORTORDER" Type="Decimal" Precision="5" Scale="0" />
+        </EntityType>
+        <EntityType Name="REFROADGROUP">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Nullable="false" Precision="5" Scale="0" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="CLASSIFICATION" Type="Decimal" Precision="5" Scale="0" />
+          <Property Name="SORTORDER" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+          <Property Name="SHORTNAME" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="REFROADTYPE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Nullable="false" Precision="5" Scale="0" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="SORTORDER" Type="Decimal" Precision="5" Scale="0" />
+        </EntityType>
+        <EntityType Name="REFROUTECODE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="String" Nullable="false" MaxLength="5" Unicode="false" FixedLength="false" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="80" Unicode="false" FixedLength="false" />
+          <Property Name="ROUTEORDER" Type="Decimal" Precision="5" Scale="0" />
+          <Property Name="ROADGROUP" Type="Decimal" Precision="5" Scale="0" />
+          <Property Name="LRSROUTEID" Type="String" MaxLength="5" Unicode="false" FixedLength="false" />
+          <Property Name="MRD" Type="String" MaxLength="80" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="REFROUTECODESBK">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="String" Nullable="false" MaxLength="5" Unicode="false" FixedLength="false" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="80" Unicode="false" FixedLength="false" />
+          <Property Name="ROUTEORDER" Type="Decimal" Precision="5" Scale="0" />
+          <Property Name="ROADGROUP" Type="Decimal" Precision="5" Scale="0" />
+          <Property Name="LRSROUTEID" Type="String" MaxLength="5" Unicode="false" FixedLength="false" />
+          <Property Name="MRD" Type="String" MaxLength="80" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="REFSCHOOLBUSRELATEDAR">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="false" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="STATECODE" Type="Decimal" Nullable="false" Precision="1" Scale="0" />
+        </EntityType>
+        <EntityType Name="REFSEATLOCATION">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Nullable="false" Precision="5" Scale="0" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="SORTORDER" Type="Decimal" Precision="5" Scale="0" />
+        </EntityType>
+        <EntityType Name="REFSEQUENCEOFEVENT">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Nullable="false" Precision="5" Scale="0" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="53" Unicode="false" FixedLength="false" />
+          <Property Name="SORTORDER" Type="Decimal" Precision="5" Scale="0" />
+        </EntityType>
+        <EntityType Name="REFSEX">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="false" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="SORTORDER" Type="Decimal" Precision="5" Scale="0" />
+        </EntityType>
+        <EntityType Name="REFSHOULDER">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="SORTORDER" Type="Decimal" Precision="5" Scale="0" />
+        </EntityType>
+        <EntityType Name="REFSOURCEOFCARRIERNAME">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Nullable="false" Precision="5" Scale="0" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="SORTORDER" Type="Decimal" Precision="5" Scale="0" />
+        </EntityType>
+        <EntityType Name="REFSPECIALSYSTEM">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="SORTORDER" Type="Decimal" Precision="5" Scale="0" />
+        </EntityType>
+        <EntityType Name="REFSTATE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="String" Nullable="false" MaxLength="3" Unicode="false" FixedLength="false" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="SORTORDER" Type="Decimal" Precision="5" Scale="0" />
+        </EntityType>
+        <EntityType Name="REFSTATECLASS">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="SORTORDER" Type="Decimal" Precision="5" Scale="0" />
+        </EntityType>
+        <EntityType Name="REFSTDTABLESAM">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+          <Property Name="TABLENAME" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="REFSTDTABLESCR">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+          <Property Name="TABLENAME" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="REFSTREET">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+          <Property Name="CITYCODE" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+          <Property Name="STREET1" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="STREET2" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="REFSURFACECONDITION">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Nullable="false" Precision="5" Scale="0" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+          <Property Name="SORTORDER" Type="Decimal" Precision="5" Scale="0" />
+        </EntityType>
+        <EntityType Name="REFTA1FUNCGRPS">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+          <Property Name="DESCRIPTION" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="SORTORDER" Type="Decimal" Precision="5" Scale="0" />
+          <NavigationProperty Name="REFFUNCTCLASSes" Relationship="VCSGModel1.REFTA1FUNCGRPSREFFUNCTCLASS" FromRole="REFTA1FUNCGRPS" ToRole="REFFUNCTCLASS" />
+        </EntityType>
+        <EntityType Name="REFTA1RELATEDDATA">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+          <Property Name="THOUSANDSOFREGVEHICLES" Type="Double" />
+          <Property Name="ANNUALMILESPERVEHICLE" Type="Double" />
+          <Property Name="MOTORFUELGALLONSMILLIONS" Type="Double" />
+          <Property Name="POPULATIONINTHOUSANDS" Type="Double" />
+          <Property Name="LICDRIVERSINTHOUSANDS" Type="Double" />
+          <Property Name="YEAROFDATAUSED" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="NONFEDLOCALRURAL" Type="Double" />
+          <Property Name="NONFEDERALLOCALURBAN" Type="Double" />
+          <Property Name="NONFEDCOLLECTORRURAL" Type="Double" />
+        </EntityType>
+        <EntityType Name="REFTOLLFACILITY">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="SORTORDER" Type="Decimal" Precision="5" Scale="0" />
+        </EntityType>
+        <EntityType Name="REFTOWNCODE">
+          <Key>
+            <PropertyRef Name="TOWNCODE" />
+            <PropertyRef Name="COUNTYCODE" />
+          </Key>
+          <Property Name="TOWNCODE" Type="String" Nullable="false" MaxLength="4" Unicode="false" FixedLength="false" />
+          <Property Name="COUNTYCODE" Type="Decimal" Nullable="false" Precision="5" Scale="0" />
+          <Property Name="DESCRIPTION" Type="String" Nullable="false" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="SORTORDER" Type="Decimal" Precision="5" Scale="0" />
+        </EntityType>
+        <EntityType Name="REFTRAFFICSIGNAL">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Nullable="false" Precision="5" Scale="0" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="SORTORDER" Type="Decimal" Precision="5" Scale="0" />
+        </EntityType>
+        <EntityType Name="REFTRANSACTIONCODE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="90" Unicode="false" FixedLength="false" />
+          <Property Name="SORTORDER" Type="Decimal" Precision="5" Scale="0" />
+        </EntityType>
+        <EntityType Name="REFTRAVELRTCAT">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="SORTORDER" Type="Decimal" Precision="5" Scale="0" />
+        </EntityType>
+        <EntityType Name="REFTRAVELRTID">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="String" Nullable="false" MaxLength="5" Unicode="false" FixedLength="false" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="80" Unicode="false" FixedLength="false" />
+          <Property Name="SORTORDER" Type="Decimal" Precision="5" Scale="0" />
+        </EntityType>
+        <EntityType Name="REFUNITTYPE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Nullable="false" Precision="5" Scale="0" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="55" Unicode="false" FixedLength="false" />
+          <Property Name="NONMOTORVEHICLE" Type="Decimal" Nullable="false" Precision="1" Scale="0" />
+          <Property Name="COMMERCIAL" Type="Decimal" Nullable="false" Precision="1" Scale="0" />
+          <Property Name="PERSONTYPEEQUIVELENT" Type="Decimal" Precision="5" Scale="0" />
+          <Property Name="COLLISIONNAME" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="SORTORDER" Type="Decimal" Precision="5" Scale="0" />
+          <Property Name="SHAPEID" Type="Decimal" Precision="5" Scale="0" />
+        </EntityType>
+        <EntityType Name="REFVEHCOLLIDEDWITH">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Nullable="false" Precision="5" Scale="0" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+          <Property Name="SORTORDER" Type="Decimal" Precision="5" Scale="0" />
+        </EntityType>
+        <EntityType Name="REFVEHCONFIGURATION">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Nullable="false" Precision="5" Scale="0" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="SORTORDER" Type="Decimal" Precision="5" Scale="0" />
+        </EntityType>
+        <EntityType Name="REFVEHDAMAGECODE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Nullable="false" Precision="5" Scale="0" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="SORTORDER" Type="Decimal" Precision="5" Scale="0" />
+        </EntityType>
+        <EntityType Name="REFVEHDAMAGEEST">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Nullable="false" Precision="5" Scale="0" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="SORTORDER" Type="Decimal" Precision="5" Scale="0" />
+        </EntityType>
+        <EntityType Name="REFVEHMAKE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Nullable="false" Precision="5" Scale="0" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="SORTORDER" Type="Decimal" Precision="5" Scale="0" />
+        </EntityType>
+        <EntityType Name="REFVIOLATION">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="String" Nullable="false" MaxLength="5" Unicode="false" FixedLength="false" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="SORTORDER" Type="Decimal" Precision="5" Scale="0" />
+        </EntityType>
+        <EntityType Name="REFWEATHERCONDITION">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Nullable="false" Precision="5" Scale="0" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+          <Property Name="SORTORDER" Type="Decimal" Precision="5" Scale="0" />
+        </EntityType>
+        <EntityType Name="REFWEIGHTUNIT">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Nullable="false" Precision="5" Scale="0" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="SORTORDER" Type="Decimal" Precision="5" Scale="0" />
+        </EntityType>
+        <Association Name="REFTA1FUNCGRPSREFFUNCTCLASS">
+          <End Role="REFTA1FUNCGRPS" Type="VCSGModel1.REFTA1FUNCGRPS" Multiplicity="0..1" />
+          <End Role="REFFUNCTCLASS" Type="VCSGModel1.REFFUNCTCLASS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="REFTA1FUNCGRPS">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="REFFUNCTCLASS">
+              <PropertyRef Name="FAUAREAID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="VCSGModel1StoreContainer" CdmEntityContainer="ReferenceEntities">
+          <EntitySetMapping Name="REFACCESSCONTROLs">
+            <EntityTypeMapping TypeName="VCSGModel1.REFACCESSCONTROL">
+              <MappingFragment StoreEntitySet="REFACCESSCONTROL">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="SORTORDER" ColumnName="SORTORDER" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFADMINCLASSes">
+            <EntityTypeMapping TypeName="VCSGModel1.REFADMINCLASS">
+              <MappingFragment StoreEntitySet="REFADMINCLASS">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="SORTORDER" ColumnName="SORTORDER" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFALCOHOLTESTs">
+            <EntityTypeMapping TypeName="VCSGModel1.REFALCOHOLTEST">
+              <MappingFragment StoreEntitySet="REFALCOHOLTEST">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="SORTORDER" ColumnName="SORTORDER" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFAPPARANTOPCONDs">
+            <EntityTypeMapping TypeName="VCSGModel1.REFAPPARANTOPCOND">
+              <MappingFragment StoreEntitySet="REFAPPARANTOPCOND">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="SORTORDER" ColumnName="SORTORDER" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFCARGOBODYTYPEs">
+            <EntityTypeMapping TypeName="VCSGModel1.REFCARGOBODYTYPE">
+              <MappingFragment StoreEntitySet="REFCARGOBODYTYPE">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="SORTORDER" ColumnName="SORTORDER" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFCENSUSCATEGORies">
+            <EntityTypeMapping TypeName="VCSGModel1.REFCENSUSCATEGORY">
+              <MappingFragment StoreEntitySet="REFCENSUSCATEGORY">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="SORTORDER" ColumnName="SORTORDER" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFCITYCODEs">
+            <EntityTypeMapping TypeName="VCSGModel1.REFCITYCODE">
+              <MappingFragment StoreEntitySet="REFCITYCODE">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="ZIPCODE" ColumnName="ZIPCODE" />
+                <ScalarProperty Name="COUNTYCODE" ColumnName="COUNTYCODE" />
+                <ScalarProperty Name="SORTORDER" ColumnName="SORTORDER" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFCLASS1TOWNHIGHWAYS">
+            <EntityTypeMapping TypeName="VCSGModel1.REFCLASS1TOWNHIGHWAYS">
+              <MappingFragment StoreEntitySet="REFCLASS1TOWNHIGHWAYS">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="ROUTECODE" ColumnName="ROUTECODE" />
+                <ScalarProperty Name="ROUTENAME" ColumnName="ROUTENAME" />
+                <ScalarProperty Name="CITYCODE" ColumnName="CITYCODE" />
+                <ScalarProperty Name="CITYNAME" ColumnName="CITYNAME" />
+                <ScalarProperty Name="BEGINMILEPOINT" ColumnName="BEGINMILEPOINT" />
+                <ScalarProperty Name="ENDMILEPOINT" ColumnName="ENDMILEPOINT" />
+                <ScalarProperty Name="SORTORDER" ColumnName="SORTORDER" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFCLOSEYEARs">
+            <EntityTypeMapping TypeName="VCSGModel1.REFCLOSEYEAR">
+              <MappingFragment StoreEntitySet="REFCLOSEYEAR">
+                <ScalarProperty Name="CYEAR" ColumnName="CYEAR" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFCONTRIBCIRCUMSTANCES">
+            <EntityTypeMapping TypeName="VCSGModel1.REFCONTRIBCIRCUMSTANCE">
+              <MappingFragment StoreEntitySet="REFCONTRIBCIRCUMSTANCES">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="SORTORDER" ColumnName="SORTORDER" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFCOUNTYCODEs">
+            <EntityTypeMapping TypeName="VCSGModel1.REFCOUNTYCODE">
+              <MappingFragment StoreEntitySet="REFCOUNTYCODE">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="SORTORDER" ColumnName="SORTORDER" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFCRASHTYPEs">
+            <EntityTypeMapping TypeName="VCSGModel1.REFCRASHTYPE">
+              <MappingFragment StoreEntitySet="REFCRASHTYPE">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="SORTORDER" ColumnName="SORTORDER" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFDEFECTIVEEQUIPMENTs">
+            <EntityTypeMapping TypeName="VCSGModel1.REFDEFECTIVEEQUIPMENT">
+              <MappingFragment StoreEntitySet="REFDEFECTIVEEQUIPMENT">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="SORTORDER" ColumnName="SORTORDER" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFDIRECTIONs">
+            <EntityTypeMapping TypeName="VCSGModel1.REFDIRECTION">
+              <MappingFragment StoreEntitySet="REFDIRECTION">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="SORTORDER" ColumnName="SORTORDER" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFDIROFCOLLISIONs">
+            <EntityTypeMapping TypeName="VCSGModel1.REFDIROFCOLLISION">
+              <MappingFragment StoreEntitySet="REFDIROFCOLLISION">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="SORTORDER" ColumnName="SORTORDER" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFDISTANCETYPEs">
+            <EntityTypeMapping TypeName="VCSGModel1.REFDISTANCETYPE">
+              <MappingFragment StoreEntitySet="REFDISTANCETYPE">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="SORTORDER" ColumnName="SORTORDER" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFDOMAINNAMEs">
+            <EntityTypeMapping TypeName="VCSGModel1.REFDOMAINNAME">
+              <MappingFragment StoreEntitySet="REFDOMAINNAME">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="SORTORDER" ColumnName="SORTORDER" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFDRUGTESTs">
+            <EntityTypeMapping TypeName="VCSGModel1.REFDRUGTEST">
+              <MappingFragment StoreEntitySet="REFDRUGTEST">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="SORTORDER" ColumnName="SORTORDER" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFDRUGTESTRESULTs">
+            <EntityTypeMapping TypeName="VCSGModel1.REFDRUGTESTRESULT">
+              <MappingFragment StoreEntitySet="REFDRUGTESTRESULT">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="SORTORDER" ColumnName="SORTORDER" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFEJECTEDs">
+            <EntityTypeMapping TypeName="VCSGModel1.REFEJECTED">
+              <MappingFragment StoreEntitySet="REFEJECTED">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="SORTORDER" ColumnName="SORTORDER" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFEMSAGENCIES">
+            <EntityTypeMapping TypeName="VCSGModel1.REFEMSAGENCy">
+              <MappingFragment StoreEntitySet="REFEMSAGENCIES">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="SORTORDER" ColumnName="SORTORDER" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFEQUIPMENTARS">
+            <EntityTypeMapping TypeName="VCSGModel1.REFEQUIPMENTAR">
+              <MappingFragment StoreEntitySet="REFEQUIPMENTARS">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="STATECODE" ColumnName="STATECODE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFFASYSDESIGNWAYs">
+            <EntityTypeMapping TypeName="VCSGModel1.REFFASYSDESIGNWAY">
+              <MappingFragment StoreEntitySet="REFFASYSDESIGNWAY">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="FAFLAG" ColumnName="FAFLAG" />
+                <ScalarProperty Name="SORTORDER" ColumnName="SORTORDER" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFFASYSTRAVELWAYs">
+            <EntityTypeMapping TypeName="VCSGModel1.REFFASYSTRAVELWAY">
+              <MappingFragment StoreEntitySet="REFFASYSTRAVELWAY">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="SORTORDER" ColumnName="SORTORDER" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFFAUAREAs">
+            <EntityTypeMapping TypeName="VCSGModel1.REFFAUAREA">
+              <MappingFragment StoreEntitySet="REFFAUAREA">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="SORTORDER" ColumnName="SORTORDER" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFFIVEYRIMPROVEMENTS">
+            <EntityTypeMapping TypeName="VCSGModel1.REFFIVEYRIMPROVEMENT">
+              <MappingFragment StoreEntitySet="REFFIVEYRIMPROVEMENTS">
+                <ScalarProperty Name="ROUTECODE" ColumnName="ROUTECODE" />
+                <ScalarProperty Name="ROUTENAME" ColumnName="ROUTENAME" />
+                <ScalarProperty Name="CITYCODE" ColumnName="CITYCODE" />
+                <ScalarProperty Name="BEGINMILEPOINT" ColumnName="BEGINMILEPOINT" />
+                <ScalarProperty Name="ENDMILEPOINT" ColumnName="ENDMILEPOINT" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFFUNCTCLASSes">
+            <EntityTypeMapping TypeName="VCSGModel1.REFFUNCTCLASS">
+              <MappingFragment StoreEntitySet="REFFUNCTCLASS">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="FAUAREAID" ColumnName="FAUAREAID" />
+                <ScalarProperty Name="URBANFLAG" ColumnName="URBANFLAG" />
+                <ScalarProperty Name="ABREVIATEDNAME" ColumnName="ABREVIATEDNAME" />
+                <ScalarProperty Name="SORTORDER" ColumnName="SORTORDER" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFGOVLEVOFCTRs">
+            <EntityTypeMapping TypeName="VCSGModel1.REFGOVLEVOFCTR">
+              <MappingFragment StoreEntitySet="REFGOVLEVOFCTR">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="SORTORDER" ColumnName="SORTORDER" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RefGVWROrGCWRs">
+            <EntityTypeMapping TypeName="VCSGModel1.RefGVWROrGCWR">
+              <MappingFragment StoreEntitySet="RefGVWROrGCWR">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+                <ScalarProperty Name="NoDisplay" ColumnName="NoDisplay" />
+                <ScalarProperty Name="SafetyNetRef" ColumnName="SafetyNetRef" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFHIGHWAYDISTRICTs">
+            <EntityTypeMapping TypeName="VCSGModel1.REFHIGHWAYDISTRICT">
+              <MappingFragment StoreEntitySet="REFHIGHWAYDISTRICT">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="SORTORDER" ColumnName="SORTORDER" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFHOSPITALS">
+            <EntityTypeMapping TypeName="VCSGModel1.REFHOSPITAL">
+              <MappingFragment StoreEntitySet="REFHOSPITALS">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="SORTORDER" ColumnName="SORTORDER" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RefImageTypes">
+            <EntityTypeMapping TypeName="VCSGModel1.RefImageType">
+              <MappingFragment StoreEntitySet="RefImageType">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="NoDisplay" ColumnName="NoDisplay" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFINJURies">
+            <EntityTypeMapping TypeName="VCSGModel1.REFINJURY">
+              <MappingFragment StoreEntitySet="REFINJURY">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="SORTORDER" ColumnName="SORTORDER" />
+                <ScalarProperty Name="SEVERITYLEVEL" ColumnName="SEVERITYLEVEL" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFINSURANCECOes">
+            <EntityTypeMapping TypeName="VCSGModel1.REFINSURANCECO">
+              <MappingFragment StoreEntitySet="REFINSURANCECO">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="SORTORDER" ColumnName="SORTORDER" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFINTERSTATEROUTES">
+            <EntityTypeMapping TypeName="VCSGModel1.REFINTERSTATEROUTE">
+              <MappingFragment StoreEntitySet="REFINTERSTATEROUTES">
+                <ScalarProperty Name="INTERSTATEROUTE" ColumnName="INTERSTATEROUTE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFINVENRTNUMs">
+            <EntityTypeMapping TypeName="VCSGModel1.REFINVENRTNUM">
+              <MappingFragment StoreEntitySet="REFINVENRTNUM">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="SORTORDER" ColumnName="SORTORDER" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFLENGTHUNITS">
+            <EntityTypeMapping TypeName="VCSGModel1.REFLENGTHUNIT">
+              <MappingFragment StoreEntitySet="REFLENGTHUNITS">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="SORTORDER" ColumnName="SORTORDER" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFLICENSECLASSes">
+            <EntityTypeMapping TypeName="VCSGModel1.REFLICENSECLASS">
+              <MappingFragment StoreEntitySet="REFLICENSECLASS">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="SORTORDER" ColumnName="SORTORDER" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFLICRESTRICTPERMISSes">
+            <EntityTypeMapping TypeName="VCSGModel1.REFLICRESTRICTPERMISS">
+              <MappingFragment StoreEntitySet="REFLICRESTRICTPERMISS">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="STATECODE" ColumnName="STATECODE" />
+                <ScalarProperty Name="SORTORDER" ColumnName="SORTORDER" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFLIGHTs">
+            <EntityTypeMapping TypeName="VCSGModel1.REFLIGHT">
+              <MappingFragment StoreEntitySet="REFLIGHT">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="SORTORDER" ColumnName="SORTORDER" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFLRSROUTEMILEAGEs">
+            <EntityTypeMapping TypeName="VCSGModel1.REFLRSROUTEMILEAGE">
+              <MappingFragment StoreEntitySet="REFLRSROUTEMILEAGE">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="ROUTENUMBER" ColumnName="ROUTENUMBER" />
+                <ScalarProperty Name="COUNTYTOWNCODE" ColumnName="COUNTYTOWNCODE" />
+                <ScalarProperty Name="TOWN" ColumnName="TOWN" />
+                <ScalarProperty Name="BEGINNING_MILEAGE" ColumnName="BEGINNING_MILEAGE" />
+                <ScalarProperty Name="ENDINGMILEAGE" ColumnName="ENDINGMILEAGE" />
+                <ScalarProperty Name="ACCUMMILEAGE" ColumnName="ACCUMMILEAGE" />
+                <ScalarProperty Name="DIRECTION" ColumnName="DIRECTION" />
+                <ScalarProperty Name="PRINTUNKNOWNS" ColumnName="PRINTUNKNOWNS" />
+                <ScalarProperty Name="EFFECTIVEDATE" ColumnName="EFFECTIVEDATE" />
+                <ScalarProperty Name="ABEGINNING_MILEAGE" ColumnName="ABEGINNING_MILEAGE" />
+                <ScalarProperty Name="AENDING_MILEAGE" ColumnName="AENDING_MILEAGE" />
+                <ScalarProperty Name="AACCUMMILEAGE" ColumnName="AACCUMMILEAGE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFLRSROUTENUMBERS">
+            <EntityTypeMapping TypeName="VCSGModel1.REFLRSROUTENUMBER">
+              <MappingFragment StoreEntitySet="REFLRSROUTENUMBERS">
+                <ScalarProperty Name="IDKEY" ColumnName="IDKEY" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="ROUTENUMBERID" ColumnName="ROUTENUMBERID" />
+                <ScalarProperty Name="DIRECTION" ColumnName="DIRECTION" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFMEDIANTYPEs">
+            <EntityTypeMapping TypeName="VCSGModel1.REFMEDIANTYPE">
+              <MappingFragment StoreEntitySet="REFMEDIANTYPE">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="SORTORDER" ColumnName="SORTORDER" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFMILEPTINDs">
+            <EntityTypeMapping TypeName="VCSGModel1.REFMILEPTIND">
+              <MappingFragment StoreEntitySet="REFMILEPTIND">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="SORTORDER" ColumnName="SORTORDER" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFMUNICIPALITies">
+            <EntityTypeMapping TypeName="VCSGModel1.REFMUNICIPALITY">
+              <MappingFragment StoreEntitySet="REFMUNICIPALITY">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="SORTORDER" ColumnName="SORTORDER" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFPARKWAYTRUCKS">
+            <EntityTypeMapping TypeName="VCSGModel1.REFPARKWAYTRUCK">
+              <MappingFragment StoreEntitySet="REFPARKWAYTRUCKS">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="SORTORDER" ColumnName="SORTORDER" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFPAVEMENTTYPEs">
+            <EntityTypeMapping TypeName="VCSGModel1.REFPAVEMENTTYPE">
+              <MappingFragment StoreEntitySet="REFPAVEMENTTYPE">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="SORTORDER" ColumnName="SORTORDER" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFPEDESTRIANCYCLEACTIONs">
+            <EntityTypeMapping TypeName="VCSGModel1.REFPEDESTRIANCYCLEACTION">
+              <MappingFragment StoreEntitySet="REFPEDESTRIANCYCLEACTION">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="SORTORDER" ColumnName="SORTORDER" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFPEDESTRIANCYCLELOCATIONs">
+            <EntityTypeMapping TypeName="VCSGModel1.REFPEDESTRIANCYCLELOCATION">
+              <MappingFragment StoreEntitySet="REFPEDESTRIANCYCLELOCATION">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="SORTORDER" ColumnName="SORTORDER" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RefPerceivedRaces">
+            <EntityTypeMapping TypeName="VCSGModel1.RefPerceivedRace">
+              <MappingFragment StoreEntitySet="RefPerceivedRace">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+                <ScalarProperty Name="NoDisplay" ColumnName="NoDisplay" />
+                <ScalarProperty Name="SpillmanRef" ColumnName="SpillmanRef" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFPERSONTYPEs">
+            <EntityTypeMapping TypeName="VCSGModel1.REFPERSONTYPE">
+              <MappingFragment StoreEntitySet="REFPERSONTYPE">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="SORTORDER" ColumnName="SORTORDER" />
+                <ScalarProperty Name="VEHTYPEID" ColumnName="VEHTYPEID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFPLATETYPEs">
+            <EntityTypeMapping TypeName="VCSGModel1.REFPLATETYPE">
+              <MappingFragment StoreEntitySet="REFPLATETYPE">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="SORTORDER" ColumnName="SORTORDER" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFPOPSIZEGRPs">
+            <EntityTypeMapping TypeName="VCSGModel1.REFPOPSIZEGRP">
+              <MappingFragment StoreEntitySet="REFPOPSIZEGRP">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="SORTORDER" ColumnName="SORTORDER" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFPOSTEDSPEEDs">
+            <EntityTypeMapping TypeName="VCSGModel1.REFPOSTEDSPEED">
+              <MappingFragment StoreEntitySet="REFPOSTEDSPEED">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="SORTORDER" ColumnName="SORTORDER" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFRECORDTYPEs">
+            <EntityTypeMapping TypeName="VCSGModel1.REFRECORDTYPE">
+              <MappingFragment StoreEntitySet="REFRECORDTYPE">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="SORTORDER" ColumnName="SORTORDER" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFREPORTINGAGENCies">
+            <EntityTypeMapping TypeName="VCSGModel1.REFREPORTINGAGENCY">
+              <MappingFragment StoreEntitySet="REFREPORTINGAGENCY">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="SORTORDER" ColumnName="SORTORDER" />
+                <ScalarProperty Name="XREFCITYCODE" ColumnName="XREFCITYCODE" />
+                <ScalarProperty Name="AGENCYEMAILADDRESS" ColumnName="AGENCYEMAILADDRESS" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFRESTRAINTs">
+            <EntityTypeMapping TypeName="VCSGModel1.REFRESTRAINT">
+              <MappingFragment StoreEntitySet="REFRESTRAINT">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="SORTORDER" ColumnName="SORTORDER" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFROADALIGNs">
+            <EntityTypeMapping TypeName="VCSGModel1.REFROADALIGN">
+              <MappingFragment StoreEntitySet="REFROADALIGN">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="SORTORDER" ColumnName="SORTORDER" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFROADCHARACTERISTICS">
+            <EntityTypeMapping TypeName="VCSGModel1.REFROADCHARACTERISTIC">
+              <MappingFragment StoreEntitySet="REFROADCHARACTERISTICS">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="SORTORDER" ColumnName="SORTORDER" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFROADCONDITIONS">
+            <EntityTypeMapping TypeName="VCSGModel1.REFROADCONDITION">
+              <MappingFragment StoreEntitySet="REFROADCONDITIONS">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="SORTORDER" ColumnName="SORTORDER" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFROADDESIGNs">
+            <EntityTypeMapping TypeName="VCSGModel1.REFROADDESIGN">
+              <MappingFragment StoreEntitySet="REFROADDESIGN">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="SORTORDER" ColumnName="SORTORDER" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFROADGROUPS">
+            <EntityTypeMapping TypeName="VCSGModel1.REFROADGROUP">
+              <MappingFragment StoreEntitySet="REFROADGROUPS">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="CLASSIFICATION" ColumnName="CLASSIFICATION" />
+                <ScalarProperty Name="SORTORDER" ColumnName="SORTORDER" />
+                <ScalarProperty Name="SHORTNAME" ColumnName="SHORTNAME" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFROADTYPEs">
+            <EntityTypeMapping TypeName="VCSGModel1.REFROADTYPE">
+              <MappingFragment StoreEntitySet="REFROADTYPE">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="SORTORDER" ColumnName="SORTORDER" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFROUTECODES">
+            <EntityTypeMapping TypeName="VCSGModel1.REFROUTECODE">
+              <MappingFragment StoreEntitySet="REFROUTECODES">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="ROUTEORDER" ColumnName="ROUTEORDER" />
+                <ScalarProperty Name="ROADGROUP" ColumnName="ROADGROUP" />
+                <ScalarProperty Name="LRSROUTEID" ColumnName="LRSROUTEID" />
+                <ScalarProperty Name="MRD" ColumnName="MRD" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFROUTECODESBKs">
+            <EntityTypeMapping TypeName="VCSGModel1.REFROUTECODESBK">
+              <MappingFragment StoreEntitySet="REFROUTECODESBK">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="ROUTEORDER" ColumnName="ROUTEORDER" />
+                <ScalarProperty Name="ROADGROUP" ColumnName="ROADGROUP" />
+                <ScalarProperty Name="LRSROUTEID" ColumnName="LRSROUTEID" />
+                <ScalarProperty Name="MRD" ColumnName="MRD" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFSCHOOLBUSRELATEDARS">
+            <EntityTypeMapping TypeName="VCSGModel1.REFSCHOOLBUSRELATEDAR">
+              <MappingFragment StoreEntitySet="REFSCHOOLBUSRELATEDARS">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="STATECODE" ColumnName="STATECODE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFSEATLOCATIONs">
+            <EntityTypeMapping TypeName="VCSGModel1.REFSEATLOCATION">
+              <MappingFragment StoreEntitySet="REFSEATLOCATION">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="SORTORDER" ColumnName="SORTORDER" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFSEQUENCEOFEVENTS">
+            <EntityTypeMapping TypeName="VCSGModel1.REFSEQUENCEOFEVENT">
+              <MappingFragment StoreEntitySet="REFSEQUENCEOFEVENTS">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="SORTORDER" ColumnName="SORTORDER" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFSEXes">
+            <EntityTypeMapping TypeName="VCSGModel1.REFSEX">
+              <MappingFragment StoreEntitySet="REFSEX">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="SORTORDER" ColumnName="SORTORDER" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFSHOULDERs">
+            <EntityTypeMapping TypeName="VCSGModel1.REFSHOULDER">
+              <MappingFragment StoreEntitySet="REFSHOULDER">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="SORTORDER" ColumnName="SORTORDER" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFSOURCEOFCARRIERNAMEs">
+            <EntityTypeMapping TypeName="VCSGModel1.REFSOURCEOFCARRIERNAME">
+              <MappingFragment StoreEntitySet="REFSOURCEOFCARRIERNAME">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="SORTORDER" ColumnName="SORTORDER" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFSPECIALSYSTEMS">
+            <EntityTypeMapping TypeName="VCSGModel1.REFSPECIALSYSTEM">
+              <MappingFragment StoreEntitySet="REFSPECIALSYSTEMS">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="SORTORDER" ColumnName="SORTORDER" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFSTATEs">
+            <EntityTypeMapping TypeName="VCSGModel1.REFSTATE">
+              <MappingFragment StoreEntitySet="REFSTATE">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="SORTORDER" ColumnName="SORTORDER" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFSTATECLASSes">
+            <EntityTypeMapping TypeName="VCSGModel1.REFSTATECLASS">
+              <MappingFragment StoreEntitySet="REFSTATECLASS">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="SORTORDER" ColumnName="SORTORDER" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFSTDTABLESAMS">
+            <EntityTypeMapping TypeName="VCSGModel1.REFSTDTABLESAM">
+              <MappingFragment StoreEntitySet="REFSTDTABLESAMS">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="TABLENAME" ColumnName="TABLENAME" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFSTDTABLESCRS">
+            <EntityTypeMapping TypeName="VCSGModel1.REFSTDTABLESCR">
+              <MappingFragment StoreEntitySet="REFSTDTABLESCRS">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="TABLENAME" ColumnName="TABLENAME" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFSTREETS">
+            <EntityTypeMapping TypeName="VCSGModel1.REFSTREET">
+              <MappingFragment StoreEntitySet="REFSTREETS">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="CITYCODE" ColumnName="CITYCODE" />
+                <ScalarProperty Name="STREET1" ColumnName="STREET1" />
+                <ScalarProperty Name="STREET2" ColumnName="STREET2" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFSURFACECONDITIONs">
+            <EntityTypeMapping TypeName="VCSGModel1.REFSURFACECONDITION">
+              <MappingFragment StoreEntitySet="REFSURFACECONDITION">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="SORTORDER" ColumnName="SORTORDER" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFTA1FUNCGRPS">
+            <EntityTypeMapping TypeName="VCSGModel1.REFTA1FUNCGRPS">
+              <MappingFragment StoreEntitySet="REFTA1FUNCGRPS">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="SORTORDER" ColumnName="SORTORDER" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFTA1RELATEDDATA">
+            <EntityTypeMapping TypeName="VCSGModel1.REFTA1RELATEDDATA">
+              <MappingFragment StoreEntitySet="REFTA1RELATEDDATA">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="THOUSANDSOFREGVEHICLES" ColumnName="THOUSANDSOFREGVEHICLES" />
+                <ScalarProperty Name="ANNUALMILESPERVEHICLE" ColumnName="ANNUALMILESPERVEHICLE" />
+                <ScalarProperty Name="MOTORFUELGALLONSMILLIONS" ColumnName="MOTORFUELGALLONSMILLIONS" />
+                <ScalarProperty Name="POPULATIONINTHOUSANDS" ColumnName="POPULATIONINTHOUSANDS" />
+                <ScalarProperty Name="LICDRIVERSINTHOUSANDS" ColumnName="LICDRIVERSINTHOUSANDS" />
+                <ScalarProperty Name="YEAROFDATAUSED" ColumnName="YEAROFDATAUSED" />
+                <ScalarProperty Name="NONFEDLOCALRURAL" ColumnName="NONFEDLOCALRURAL" />
+                <ScalarProperty Name="NONFEDERALLOCALURBAN" ColumnName="NONFEDERALLOCALURBAN" />
+                <ScalarProperty Name="NONFEDCOLLECTORRURAL" ColumnName="NONFEDCOLLECTORRURAL" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFTOLLFACILITies">
+            <EntityTypeMapping TypeName="VCSGModel1.REFTOLLFACILITY">
+              <MappingFragment StoreEntitySet="REFTOLLFACILITY">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="SORTORDER" ColumnName="SORTORDER" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFTOWNCODEs">
+            <EntityTypeMapping TypeName="VCSGModel1.REFTOWNCODE">
+              <MappingFragment StoreEntitySet="REFTOWNCODE">
+                <ScalarProperty Name="TOWNCODE" ColumnName="TOWNCODE" />
+                <ScalarProperty Name="COUNTYCODE" ColumnName="COUNTYCODE" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="SORTORDER" ColumnName="SORTORDER" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFTRAFFICSIGNALS">
+            <EntityTypeMapping TypeName="VCSGModel1.REFTRAFFICSIGNAL">
+              <MappingFragment StoreEntitySet="REFTRAFFICSIGNALS">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="SORTORDER" ColumnName="SORTORDER" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFTRANSACTIONCODEs">
+            <EntityTypeMapping TypeName="VCSGModel1.REFTRANSACTIONCODE">
+              <MappingFragment StoreEntitySet="REFTRANSACTIONCODE">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="SORTORDER" ColumnName="SORTORDER" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFTRAVELRTCATs">
+            <EntityTypeMapping TypeName="VCSGModel1.REFTRAVELRTCAT">
+              <MappingFragment StoreEntitySet="REFTRAVELRTCAT">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="SORTORDER" ColumnName="SORTORDER" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFTRAVELRTIDs">
+            <EntityTypeMapping TypeName="VCSGModel1.REFTRAVELRTID">
+              <MappingFragment StoreEntitySet="REFTRAVELRTID">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="SORTORDER" ColumnName="SORTORDER" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFUNITTYPEs">
+            <EntityTypeMapping TypeName="VCSGModel1.REFUNITTYPE">
+              <MappingFragment StoreEntitySet="REFUNITTYPE">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="NONMOTORVEHICLE" ColumnName="NONMOTORVEHICLE" />
+                <ScalarProperty Name="COMMERCIAL" ColumnName="COMMERCIAL" />
+                <ScalarProperty Name="PERSONTYPEEQUIVELENT" ColumnName="PERSONTYPEEQUIVELENT" />
+                <ScalarProperty Name="COLLISIONNAME" ColumnName="COLLISIONNAME" />
+                <ScalarProperty Name="SORTORDER" ColumnName="SORTORDER" />
+                <ScalarProperty Name="SHAPEID" ColumnName="SHAPEID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFVEHCOLLIDEDWITHs">
+            <EntityTypeMapping TypeName="VCSGModel1.REFVEHCOLLIDEDWITH">
+              <MappingFragment StoreEntitySet="REFVEHCOLLIDEDWITH">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="SORTORDER" ColumnName="SORTORDER" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFVEHCONFIGURATIONs">
+            <EntityTypeMapping TypeName="VCSGModel1.REFVEHCONFIGURATION">
+              <MappingFragment StoreEntitySet="REFVEHCONFIGURATION">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="SORTORDER" ColumnName="SORTORDER" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFVEHDAMAGECODEs">
+            <EntityTypeMapping TypeName="VCSGModel1.REFVEHDAMAGECODE">
+              <MappingFragment StoreEntitySet="REFVEHDAMAGECODE">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="SORTORDER" ColumnName="SORTORDER" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFVEHDAMAGEESTs">
+            <EntityTypeMapping TypeName="VCSGModel1.REFVEHDAMAGEEST">
+              <MappingFragment StoreEntitySet="REFVEHDAMAGEEST">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="SORTORDER" ColumnName="SORTORDER" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFVEHMAKEs">
+            <EntityTypeMapping TypeName="VCSGModel1.REFVEHMAKE">
+              <MappingFragment StoreEntitySet="REFVEHMAKE">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="SORTORDER" ColumnName="SORTORDER" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFVIOLATIONS">
+            <EntityTypeMapping TypeName="VCSGModel1.REFVIOLATION">
+              <MappingFragment StoreEntitySet="REFVIOLATIONS">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="SORTORDER" ColumnName="SORTORDER" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFWEATHERCONDITIONS">
+            <EntityTypeMapping TypeName="VCSGModel1.REFWEATHERCONDITION">
+              <MappingFragment StoreEntitySet="REFWEATHERCONDITIONS">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="SORTORDER" ColumnName="SORTORDER" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REFWEIGHTUNITS">
+            <EntityTypeMapping TypeName="VCSGModel1.REFWEIGHTUNIT">
+              <MappingFragment StoreEntitySet="REFWEIGHTUNITS">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="SORTORDER" ColumnName="SORTORDER" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="23f6a949499e40fbb15a62cfb6d203a0" Name="Diagram1">
+        <EntityTypeShape EntityType="VCSGModel1.REFACCESSCONTROL" Width="1.5" PointX="0.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFADMINCLASS" Width="1.5" PointX="2.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFALCOHOLTEST" Width="1.5" PointX="4.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFAPPARANTOPCOND" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFCARGOBODYTYPE" Width="1.5" PointX="6.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFCENSUSCATEGORY" Width="1.5" PointX="6.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFCITYCODE" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFCLASS1TOWNHIGHWAYS" Width="1.5" PointX="0.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFCLOSEYEAR" Width="1.5" PointX="2.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFCONTRIBCIRCUMSTANCE" Width="1.5" PointX="8.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFCOUNTYCODE" Width="1.5" PointX="8.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFCRASHTYPE" Width="1.5" PointX="9.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFDEFECTIVEEQUIPMENT" Width="1.5" PointX="2.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFDIRECTION" Width="1.5" PointX="4.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFDIROFCOLLISION" Width="1.5" PointX="6.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFDISTANCETYPE" Width="1.5" PointX="8.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFDOMAINNAME" Width="1.5" PointX="10.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFDRUGTEST" Width="1.5" PointX="10.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFDRUGTESTRESULT" Width="1.5" PointX="10.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFEJECTED" Width="1.5" PointX="11.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFEMSAGENCy" Width="1.5" PointX="0.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFEQUIPMENTAR" Width="1.5" PointX="2.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFFASYSDESIGNWAY" Width="1.5" PointX="12.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFFASYSTRAVELWAY" Width="1.5" PointX="4.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFFAUAREA" Width="1.5" PointX="12.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFFIVEYRIMPROVEMENT" Width="1.5" PointX="6.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFFUNCTCLASS" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFGOVLEVOFCTR" Width="1.5" PointX="8.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.RefGVWROrGCWR" Width="1.5" PointX="12.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFHIGHWAYDISTRICT" Width="1.5" PointX="10.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFHOSPITAL" Width="1.5" PointX="12.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.RefImageType" Width="1.5" PointX="13.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFINJURY" Width="1.5" PointX="14.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFINSURANCECO" Width="1.5" PointX="14.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFINTERSTATEROUTE" Width="1.5" PointX="14.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFINVENRTNUM" Width="1.5" PointX="14.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFLENGTHUNIT" Width="1.5" PointX="14.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFLICENSECLASS" Width="1.5" PointX="15.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFLICRESTRICTPERMISS" Width="1.5" PointX="0.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFLIGHT" Width="1.5" PointX="2.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFLRSROUTEMILEAGE" Width="1.5" PointX="4.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFLRSROUTENUMBER" Width="1.5" PointX="6.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFMEDIANTYPE" Width="1.5" PointX="8.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFMILEPTIND" Width="1.5" PointX="10.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFMUNICIPALITY" Width="1.5" PointX="16.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFPARKWAYTRUCK" Width="1.5" PointX="16.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFPAVEMENTTYPE" Width="1.5" PointX="16.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFPEDESTRIANCYCLEACTION" Width="1.5" PointX="16.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFPEDESTRIANCYCLELOCATION" Width="1.5" PointX="16.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.RefPerceivedRace" Width="1.5" PointX="17.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFPERSONTYPE" Width="1.5" PointX="12.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFPLATETYPE" Width="1.5" PointX="0.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFPOPSIZEGRP" Width="1.5" PointX="18.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFPOSTEDSPEED" Width="1.5" PointX="18.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFRECORDTYPE" Width="1.5" PointX="6.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFREPORTINGAGENCY" Width="1.5" PointX="8.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFRESTRAINT" Width="1.5" PointX="18.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFROADALIGN" Width="1.5" PointX="18.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFROADCHARACTERISTIC" Width="1.5" PointX="14.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFROADCONDITION" Width="1.5" PointX="18.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFROADDESIGN" Width="1.5" PointX="16.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFROADGROUP" Width="1.5" PointX="18.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFROADTYPE" Width="1.5" PointX="19.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFROUTECODE" Width="1.5" PointX="2.75" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFROUTECODESBK" Width="1.5" PointX="20.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFSCHOOLBUSRELATEDAR" Width="1.5" PointX="20.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFSEATLOCATION" Width="1.5" PointX="20.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFSEQUENCEOFEVENT" Width="1.5" PointX="10.75" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFSEX" Width="1.5" PointX="20.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFSHOULDER" Width="1.5" PointX="20.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFSOURCEOFCARRIERNAME" Width="1.5" PointX="20.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFSPECIALSYSTEM" Width="1.5" PointX="21.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFSTATE" Width="1.5" PointX="4.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFSTATECLASS" Width="1.5" PointX="6.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFSTDTABLESAM" Width="1.5" PointX="12.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFSTDTABLESCR" Width="1.5" PointX="14.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFSTREET" Width="1.5" PointX="16.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFSURFACECONDITION" Width="1.5" PointX="18.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFTA1FUNCGRPS" Width="1.5" PointX="0.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFTA1RELATEDDATA" Width="1.5" PointX="20.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFTOLLFACILITY" Width="1.5" PointX="22.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFTOWNCODE" Width="1.5" PointX="22.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFTRAFFICSIGNAL" Width="1.5" PointX="22.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFTRANSACTIONCODE" Width="1.5" PointX="22.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFTRAVELRTCAT" Width="1.5" PointX="22.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFTRAVELRTID" Width="1.5" PointX="22.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFUNITTYPE" Width="1.5" PointX="22.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFVEHCOLLIDEDWITH" Width="1.5" PointX="23.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFVEHCONFIGURATION" Width="1.5" PointX="0.75" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFVEHDAMAGECODE" Width="1.5" PointX="8.75" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFVEHDAMAGEEST" Width="1.5" PointX="2.75" PointY="24.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFVEHMAKE" Width="1.5" PointX="24.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFVIOLATION" Width="1.5" PointX="4.75" PointY="24.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFWEATHERCONDITION" Width="1.5" PointX="24.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VCSGModel1.REFWEIGHTUNIT" Width="1.5" PointX="24.75" PointY="9.75" IsExpanded="true" />
+        <AssociationConnector Association="VCSGModel1.REFTA1FUNCGRPSREFFUNCTCLASS" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
