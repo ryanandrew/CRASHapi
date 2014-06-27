@@ -615,6 +615,7 @@
     <Content Include="Areas\HelpPage\Views\_ViewStart.cshtml" />
     <None Include="Properties\PublishProfiles\CRASHAPI Tiney-Pie.pubxml" />
     <None Include="Properties\PublishProfiles\CRASHAPI Ugly.pubxml" />
+    <None Include="Properties\PublishProfiles\CRashweb.pubxml" />
     <None Include="Properties\PublishProfiles\Dropbox CRASHWEB.pubxml" />
     <None Include="Scripts\jquery-1.7.1.intellisense.js" />
     <Content Include="Scripts\jquery-1.7.1.js" />
