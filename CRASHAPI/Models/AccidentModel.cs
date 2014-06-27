@@ -21,13 +21,9 @@ namespace CRASHAPI.Models
             public string STREETADDRESS { get; set; }
             public decimal? AOTROADWAYGROUPid { get; set; }
             public string RoadGroup { get; set; }           
-            public string VCSG_CITYTOWN { get; set; }
+            public string CITYTOWN { get; set; }
             public string VCSG_AOTROUTE { get; set; }
             public string HOWMAPPED { get; set; }
-            public string GIS_LONGITUDE { get; set; }
-            public string GIS_LATITUDE { get; set; }
-            public string VCSG_LONGITUDE { get; set; }
-            public string VCSG_LATITUDE { get; set; }
             //computed fields
             public string LATITUDE { get; set; }
             public string LONGITUDE { get; set; } 
@@ -56,11 +52,7 @@ namespace CRASHAPI.Models
                 RoadGroup = a.RoadGroup;
                 VCSG_AOTROUTE = a.VCSG_AOTROUTE;
                 HOWMAPPED = a.HOWMAPPED;
-                GIS_LATITUDE = a.GIS_LATITUDE;
-                GIS_LONGITUDE = a.GIS_LONGITUDE;
-                VCSG_LATITUDE = a.VCSG_LATITUDE;
-                VCSG_LONGITUDE = a.VCSG_LONGITUDE;
-                VCSG_CITYTOWN = a.VCSG_CITYTOWN;
+                CITYTOWN = a.GIS_CITYTOWN;
 
                 if (a.HOWMAPPED != null)
                 {
