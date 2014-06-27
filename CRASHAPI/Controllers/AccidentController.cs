@@ -81,12 +81,26 @@ namespace CRASHAPI.Controllers
        
         [HttpPost]
         public List<AccidentModel.Accident> Search(BasicSearchParameters sp)
-        {          
+        {
+            int MaxSearchResults = Convert.ToInt32(WebConfigurationManager.AppSettings.Get("MaxSearchResults"));
+            
             List<AccidentModel.Accident> accidents = new List<AccidentModel.Accident>();
 
             IQueryable<vw_PQT_AccidentHeader> query = Query(sp);
 
-            foreach (vw_PQT_AccidentHeader a in query) {
+            IEnumerable<vw_PQT_AccidentHeader> results = query.AsEnumerable();
+            if (MaxSearchResults > 0)
+            {
+                if (results.Count() > MaxSearchResults)
+                {
+                    throw new HttpResponseException(HttpStatusCode.RequestedRangeNotSatisfiable);
+                    //var response = Request.CreateErrorResponse(HttpStatusCode.RequestedRangeNotSatisfiable, new HttpException(416, "The search returned to many records."));
+                }
+                results = results.Take(MaxSearchResults);
+            }
+
+            foreach (vw_PQT_AccidentHeader a in results)
+            {
                 accidents.Add(new AccidentModel.Accident(a));
             }
             return accidents;
@@ -94,7 +108,7 @@ namespace CRASHAPI.Controllers
         }
         [HttpPost]
         public IQueryable<vw_PQT_AccidentHeader> Query(BasicSearchParameters sp)
-        {
+        {            
             var query = db.vw_PQT_AccidentHeader.Where(x => x.REPORTNUMBER != null);
             if (!string.IsNullOrEmpty(sp.StartDate))
             {
